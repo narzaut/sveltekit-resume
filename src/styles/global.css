@@ -1,0 +1,191 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500, 600, 700, 800, 900');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+	scroll-behavior: smooth;
+  background: #0A192F; 
+
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--gray) !important;
+}
+body::-webkit-scrollbar-track {
+  background: var(--primary) !important;
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main_section{
+	position: relative;
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  
+  background: #0A192F; 
+  background-size: cover !important;
+	-webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+  --scrollbar-thumb: var(--background) !important;
+  --scrollbar-track: var(--primary) !important;
+}
+
+.text-green-400{
+  --tw-text-opacity: 1;
+  color: #40e9c7;
+}
+.hover-text-green-400:hover {
+  --tw-text-opacity: 1;
+  color: #40e9c7;
+}
+.border-green {
+  border-color: #40e9c7;
+}
+.bg-green{
+  background-color: #40e9c7;
+}
+.hover-bg-green-200:hover {
+  background-color: #133040;
+}
+
+.text-primary {
+  color: #133040;
+}
+
+.text-gray {
+  color: #8892B0;
+}
+.bg-gray {
+  background-color: #8892B0;
+}
+
+.text-gray-light {
+  color: #CCD6F6;
+}
+
+.bg-primary {
+  background-color: #0A192F;
+}
+
+.bg-secondary {
+  background-color: #112240;
+
+}
+
+.hover-bg-secondary:hover {
+  background-color: #112240;
+
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+
+
+.bg-lightgray{
+	background-color: #9797a1;
+}
+
+.text-shadow{
+	text-shadow: 1px 1px 2px black;
+}
+
+
+
+.hover-press-animation:hover{
+	transform: translateY(4px);
+	transition: all 0.1s ease-out;
+}
+
+.press-animation:active{
+	transform: translateY(4px);
+	transition: all 0.1s ease-out;
+}
+
+.glass {
+	background-color: rgba(10, 25, 47, 0.85);   
+	backdrop-filter: blur(4px);
+ }
+
+ .darker-glass{
+	background-color: rgba(0, 0, 0, 0.616);   
+	backdrop-filter: blur(5px);
+ }
+
+ .scrolled {
+      
+  transform: translate(0,calc(-100% - 1rem))
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 -0.4rem 0.9rem 0.2rem rgb(0 0 0 / 50%);
+  padding: 10px;
+  transition: 0.5s ease
+  
+}
+
+:root {
+  --primary: #0A192F;
+  --secondary: #22D2A0;
+  --background: #112240;
+  --gray:  #8892B0;
+} 
+.card {
+  background-color: var(--background);
+  transition: all 0.25s ease-in-out;
+  box-shadow:   
+    20px 20px 0 -3px var(--primary), 20px 20px var(--secondary),
+    20px 20px 0 -3px var(--primary), 20px 20px var(--secondary),
+    20px 20px 0 -3px var(--primary), 20px 20px var(--secondary),
+    20px 20px 0 -3px var(--primary), 20px 20px var(--secondary);
+}
+.card:hover {
+  transition: all 0.25s ease-in-out;
+  
+  box-shadow:   
+    10px 10px 0 -3px var(--primary), 10px 10px var(--secondary),
+    10px 10px 0 -3px var(--primary), 10px 10px var(--secondary),
+    10px 10px 0 -3px var(--primary), 10px 10px var(--secondary),
+    10px 10px 0 -3px var(--primary), 10px 10px var(--secondary);
+}
+
+.scrollbar-thumb {
+  --scrollbar-thumb: var(--background) !important;
+}
+
+.scrollbar-track {
+  --scrollbar-track: var(--primary) !important;
+}
