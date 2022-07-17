@@ -7,7 +7,7 @@
 
 <div id="about" class="bg-primary w-full flex  text-gray-light flex-row justify-center ">
 
-  <div class='w-full lg:w-2/3 flex flex-col items-center lg:items-start md:text-left md:items-start   py-10'>
+  <div class='w-full lg:w-2/3 flex flex-col items-center lg:items-start md:text-left md:items-start   '>
     <div class='flex items-center lg:items-start  flex-col md:flex-row '>
       <div class=' text-left w-full px-6 gap-6 lg:pr-12 lg:w-4/6  flex flex-col  items-center justify-center '>
         <div class=' rounded w-full  text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
@@ -18,11 +18,11 @@
         <div class='gap-6 font-medium flex items-center justify-center flex-col lg:items-start'>
   
           <span class='text-sm lg:text-lg  text-gray leading-6 lg:leading-8'>
-            Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!}
+            Hello! My name is TU VIEJA and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!}
           </span>
 
           <span class='text-sm lg:text-lg  text-gray leading-6 lg:leading-8'>
-            Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!}
+            Hello! My name is TU VIEJA and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!}
           </span>
           <div class='mb-4 text-sm lg:text-lg'>
             <span class='text-gray '>These are some of the technologies I've been working with: </span>
