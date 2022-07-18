@@ -22,7 +22,7 @@
 </script>
 
  
-  <nav   class:scrolled={show} class="font-mono z-20 glass scrolled fixed w-full  py-6 flex select-none  shadow-2xl ">
+  <nav   class:scrolled={show} class="font-mono z-20 glass scrolled fixed w-full items-center justify-center py-6 flex select-none  shadow-2xl ">
   <div in:fly={{x: -200, duration: 700, delay: 100}} class='h-12 flex text-gray mx-8 text-center justify-center items-center'>
     <img  src="/images/logo.png" alt="logo" class='h-full'>
   </div>
