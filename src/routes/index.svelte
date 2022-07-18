@@ -5,10 +5,12 @@
   import Experience from '../components/experience.svelte';
   import Portfolio from '../components/portfolio.svelte'
   import data from '../lang/spanish.json'
+
+
 </script>
-<div class="flex flex-col gap-40">
+<div class="flex flex-col gap-32">
   <Header data = {data.header}/>
   <About data = {data.about}/>
-  <Experience />
+  <Experience  />
   <Portfolio />
 </div>

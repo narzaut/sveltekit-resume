@@ -16,3 +16,9 @@ type ExperienceItem = {
   date: string,
   items: Array<string>
 }
+
+declare namespace svelte.JSX {
+  interface HTMLProps<T> {
+    onenterViewport?: () => void
+  }
+}

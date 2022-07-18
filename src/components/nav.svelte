@@ -1,8 +1,8 @@
 <script lang='ts'>
   import NavItem from '../components/nav.item.svelte'
-  export let data: any;
-  export let buttonText: string;
   import { onMount } from 'svelte'
+  export let data: any;
+  export let buttonText: any;
     let currentScroll = 0
     let show = false
     onMount(() => {
@@ -24,9 +24,11 @@
   </div>
   <div class='hidden mr-10 gap-8 w-full md:flex justify-end items-center ' id='nav' >
     {#each data as item, index}
-      <NavItem href='' itemName={item} index={index}/>
+      <NavItem href={item.href} itemName={item.name} index={index}/>
 	  {/each}
-    <button class='border border-green bg-transparent rounded transition hover-bg-green-200 px-4 text-sm py-2 text-green-400'>{buttonText}</button>
+    <a  href="/#portafolio ">
+      <button class='border border-green bg-transparent rounded transition hover-bg-green-200 px-4 text-sm py-2 text-green-400'>{buttonText.name}</button>
+    </a>
 
   </div>
 </nav>
