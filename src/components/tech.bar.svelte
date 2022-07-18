@@ -10,13 +10,13 @@
   import { fly } from 'svelte/transition';
   
   $: percent = 0
-  const multiplier: number = 0.7
+  const multiplier: number = 0.4
   
   const animation = async () => {
     for (let i=0; i < percentage/multiplier; i++){
       await (async () => {
         return new Promise((resolve, reject) => {
-          setTimeout(() => resolve(percent = percent + multiplier), 10)
+          setTimeout(() => resolve(percent = percent + multiplier), 1)
         })
       })()
     }
