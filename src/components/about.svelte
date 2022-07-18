@@ -1,12 +1,11 @@
 <script lang="ts">
-  import Item from './about.item.svelte'
+  import AboutCard from './about.card.svelte'
   import TechItem from './about.tech.item.svelte'
   export let data: any;
   import { fly } from 'svelte/transition';
 	import viewport from '../utils/useViewportAction';
   let animate: boolean = false;
   let visibility: string = 'invisible'
-  import { UserIcon, GithubIcon, AtSignIcon, PhoneCallIcon, MapIcon } from 'svelte-feather-icons'
 </script>
 
 {#key animate}
@@ -58,19 +57,7 @@
           </div>
         </div>
         <div class='flex items-center relative  justify-center lg:w-2/6'>
-          <div class='card w-64 lg:w-80 shadow-2xl border-shadow transition hover-press-animation rounded-lg  items-center   flex flex-col  select-none'>
-            <img alt='profile-pic' class='select-none opacity-60 w-full' src={'/images/profilepic.jpg'}/>
-            <div class='flex  text-center  py-6 flex-col items-center lg:items-start '>
-              <p class='gap-4 flex flex-col text-sm  font-mono leading-8 lg:leading-8'>				
-                <Item Icon={UserIcon} value={ data.contactDescription.name }/>
-                <Item Icon={MapIcon} value={ data.contactDescription.location }/>
-                <Item Icon={AtSignIcon} value={ data.contactDescription.email }/>
-                <Item Icon={GithubIcon} value={ data.contactDescription.github }/>
-                <Item Icon={PhoneCallIcon} value={ data.contactDescription.phoneNumber }/>
-
-              </p>
-            </div>
-          </div>
+          <AboutCard contactDescription={data.contactDescription}/>
         </div>
       </div>
   	</div>
