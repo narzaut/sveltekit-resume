@@ -112,7 +112,7 @@ body::-webkit-scrollbar-track {
 
 .from-lighter-green{
   --tw-gradient-from: #133040;
-  --tw-gradient-to: rgb(74 222 128 / 0);
+  --tw-gradient-to: rgb(157 23 77 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .to-green {

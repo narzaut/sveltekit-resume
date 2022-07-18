@@ -9,7 +9,7 @@
 
 
 </script>
-<div class="flex flex-col gap-12 lg:gap-32">
+<div class="flex flex-col gap-12 lg:gap-32 ">
   <Header data = {data.header}/>
   <About data = {data.about}/>
   <Experience  />
