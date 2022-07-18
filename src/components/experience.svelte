@@ -70,7 +70,7 @@
   >
     <div class={` flex w-full px-6 lg:px-0 lg:w-2/5 gap-8   flex-col text-gray `}>
       <div class='text-gray-light  rounded   text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
-        <span class='text-green-400  text-base lg:text-xl font-mono'> 03.</span> 
+        <span class='text-green-400  text-base lg:text-xl font-mono'> 02.</span> 
         <span class='text-left whitespace-nowrap font-bold'>Where I've worked</span>
         <div class='h-0.5 w-full bg-secondary mb-3.5 '></div>
       </div>

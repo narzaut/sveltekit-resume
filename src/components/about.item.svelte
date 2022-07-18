@@ -1,17 +1,13 @@
 <script lang="ts">
-  export let item: any;
+  export let Icon: any;
+  export let value: any;
 </script>
 
 	
-
-{#if !item.value.includes('.com') }
-  <span class=''>
-		<i class={`${item.icon} pr-2 flex h-1 w-1 text-green-400`} />
-		{ item.value }
-	</span>
-{:else}
-  <a class='hover-text-green-400 transition outline-none select-none' href={`https://${item.value}`}>
-		<i class={`${item.icon} pr-6  self-center h-1 w-1 text-green-400`} />
-		{ item.value }
+<div>
+  <a href={value.includes('.com') ? `https://${value}` : null} class={`${value.includes('.com') ? 'hover-text-green-400 transition' : ''} flex items-center justify-center gap-2`}>
+    <Icon size='1x' class='text-green-400'/>
+    { value }
 	</a>
-{/if}
+</div>
+

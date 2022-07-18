@@ -20,7 +20,7 @@
   >
     <div class={`w-full max-w-7xl flex items-center justify-center flex-col  gap-8`}>
       <div class='text-gray-light  rounded w-92  text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
-        <span class='text-green-400  text-base lg:text-xl font-mono'> 02.</span> 
+        <span class='text-green-400  text-base lg:text-xl font-mono'> 04.</span> 
         <span class='text-left whitespace-nowrap font-bold'>Portafolio</span>
         <div class='h-0.5 w-full bg-secondary mb-3.5 '></div>
       </div>

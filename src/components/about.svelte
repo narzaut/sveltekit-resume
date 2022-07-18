@@ -6,6 +6,7 @@
 	import viewport from '../utils/useViewportAction';
   let animate: boolean = false;
   let visibility: string = 'invisible'
+  import { UserIcon, GithubIcon, AtSignIcon, PhoneCallIcon, MapIcon } from 'svelte-feather-icons'
 </script>
 
 {#key animate}
@@ -61,9 +62,12 @@
             <img alt='profile-pic' class='select-none opacity-60 w-full' src={'/images/profilepic.jpg'}/>
             <div class='flex  text-center  py-6 flex-col items-center lg:items-start '>
               <p class='gap-4 flex flex-col text-sm  font-mono leading-8 lg:leading-8'>				
-                {#each data.contactDescription as item}
-                  <Item item={ item }/>
-                {/each}
+                <Item Icon={UserIcon} value={ data.contactDescription.name }/>
+                <Item Icon={MapIcon} value={ data.contactDescription.location }/>
+                <Item Icon={AtSignIcon} value={ data.contactDescription.email }/>
+                <Item Icon={GithubIcon} value={ data.contactDescription.github }/>
+                <Item Icon={PhoneCallIcon} value={ data.contactDescription.phoneNumber }/>
+
               </p>
             </div>
           </div>
