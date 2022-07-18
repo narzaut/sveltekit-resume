@@ -13,7 +13,7 @@
         {title}.
       </h1>
       <h2   in:fly="{{x: -200,duration: 1200, delay: 1800}}" class= 'text-4xl md:text-5xl lg:text-6xl text-gray font-bold'>I build things for the web</h2>
-      <div   in:fly="{{x: -200,duration: 1200, delay: 2100}}">
+      <div   in:fly="{{x: -200, duration: 1200, delay: 2100}}">
         <p class=' text-md lg:text-xl text-gray w-full lg:w-2/3'>
           {description}
         </p>  

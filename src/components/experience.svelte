@@ -75,7 +75,7 @@
         <div class='h-0.5 w-full bg-secondary mb-3.5 '></div>
       </div>
       <div class='flex flex-col lg:flex-row'>
-        <div class='w-full overflow-x-auto scrollbar-thumb scrollbar-track scrollbar-thumb-red-200 scrollbar-track-red-600 lg:w-48 flex flex-row lg:flex-col '>
+        <div class='w-full overflow-x-auto scrollbar-thumb scrollbar-track lg:w-48 flex flex-row lg:flex-col '>
           {#each experiences as experience}
             <ExperienceOption selected={selected} handleClick={handleClick} experience={experience}/>
           {/each}
