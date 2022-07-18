@@ -1,7 +1,7 @@
 <script lang='ts'>
   import Header from '../components/header.svelte'
   import About from '../components/about.svelte'
-  import Footer from '../components/footer.svelte'
+  import Skillset from '../components/skillset.svelte'
   import Experience from '../components/experience.svelte';
   import Portfolio from '../components/portfolio.svelte'
   import data from '../lang/spanish.json'
@@ -12,5 +12,6 @@
   <Header data = {data.header}/>
   <About data = {data.about}/>
   <Experience  />
+  <Skillset />
   <Portfolio />
 </div>

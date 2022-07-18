@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Item from './about.item.svelte'
   import {FolderIcon, GithubIcon, ExternalLinkIcon} from 'svelte-feather-icons'
   export let tech: Array<string>;
   export let title: string;
@@ -9,7 +8,7 @@
  
   <div class='project-nav w-full justify-between flex h-20 items-center  '>
     <div class=''>
-      <FolderIcon class='ursor-pointer text-green-400' size="2.5x"/>
+      <FolderIcon class=' text-green-400' size="2.5x"/>
     </div>
     <div class='flex gap-3 '>
       <GithubIcon class='hover-text-green-400  transition cursor-pointer text-gray-light relative' size='1.1x'/>

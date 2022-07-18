@@ -101,9 +101,22 @@ body::-webkit-scrollbar-track {
 
 }
 
+.bg-tertiary{
+  background-color: #133040;
+}
+
 .hover-bg-secondary:hover {
   background-color: #112240;
 
+}
+
+.from-lighter-green{
+  --tw-gradient-from: #133040;
+  --tw-gradient-to: rgb(74 222 128 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-green {
+  --tw-gradient-to: #40e9c7;
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
