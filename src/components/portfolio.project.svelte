@@ -3,8 +3,12 @@
   export let tech: Array<string>;
   export let title: string;
   export let description: string;
+  export let index: number;
+  export let id: string;
+  import { fly  } from 'svelte/transition';
+
 </script>
-<div id='project' class='text-gray-light hover-text-green-400 p-6 flex flex-col justify-between cursor-pointer hover-press-animation transition shadow-2xl rounded w-full mx-12 lg:mx-0 lg:w-80 h-80 bg-secondary'>
+<div in:fly="{{x:-400, duration: 700, delay:250 * index}}" id={`project/${id}`} class='text-gray-light hover-text-green-400 p-6 flex flex-col justify-between cursor-pointer hover-press-animation transition shadow-2xl rounded w-full mx-12 lg:mx-0 lg:w-80 h-80 bg-secondary'>
  
   <div class='project-nav w-full justify-between flex h-20 items-center  '>
     <div class=''>
