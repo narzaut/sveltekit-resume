@@ -8,7 +8,7 @@
   export let icon: string;
   export let index: number;
   import { fly } from 'svelte/transition';
-  
+  export let id: string;
   $: percent = 0
   const multiplier: number = 0.4
   
@@ -25,7 +25,7 @@
   onMount(() => animation())
 </script>
 
-<div in:fly={{y:400, duration:1000, delay:100 * index}} class=''>
+<div id={`techbar/${id}`} in:fly={{x:-200, duration:1200, delay:200 * index}} class=''>
   <p class='py-1 text-sm lg:text-lg text-gray font-mono font-semibold'>{name}</p>
   <div class='w-full h-10 rounded bg-secondary '>
     <div class='h-full flex items-center pl-2 rounded bg-gradient-to-r from-lighter-green to-green border-l-4 border-green' style={`width: ${percent-multiplier}%`}; >

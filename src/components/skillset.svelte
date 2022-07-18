@@ -99,7 +99,8 @@
   let animate: boolean = false;
   let visibility: string = 'invisible'
   let currentItems: number = 4;
-  let myIndex: number = 1;
+
+
 </script>
 {#key animate}
   <div 
@@ -123,16 +124,21 @@
     <div class='w-full px-8 lg:px-0 lg:w-1/3 flex flex-col gap-8'>
       {#each data.slice(0, currentItems) as item, index}
        
-        <TechBar  index={index-currentItems+4} name={item.name} percentage={item.percentage} icon={item.icon}/>
+        <TechBar id={`${index}`} index={index-currentItems+4} name={item.name} percentage={item.percentage} icon={item.icon}/>
       {/each}
       {#if currentItems < data.length}
-       <button
-          on:click={() => {currentItems = currentItems + 4; myIndex = 1}}
+      
+      <div class="self-center flex  mt-6 bg-transparent w-40 h-12 rounded hover-bg-green-200 transition text-green-400 border text-sm leading-4 font-mono border-green shadow-2xl">
+        <a
+          on:click={() => {currentItems = currentItems + 4}}
           id="loadmore"
-          type="button"
-          class="self-center mt-6 bg-transparent w-40 h-12 rounded hover-bg-green-200 transition text-green-400 border text-sm leading-4 font-mono border-green shadow-2xl">
-          Show more
-        </button>
+          href={`#techbar/${currentItems-4}`}
+          class='w-full h-full flex items-center justify-center'
+          >
+            Show more
+        </a>
+      </div>
+   
       {/if}
     </div>
   </div>
