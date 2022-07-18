@@ -20,7 +20,7 @@
     class={`${visibility} flex bg-primary w-full  text-gray-light flex-row justify-center `}
   >
     <div class={`flex w-full lg:w-2/3 max-w-7xl flex-col items-center lg:items-start md:text-left md:items-start`}>
-      <div class='flex items-center lg:items-start  flex-col md:flex-row '>
+      <div class='flex items-center lg:items-start  flex-col gap-20 md:gap-0 md:flex-row '>
         <div class=' text-left w-full px-6 gap-6 lg:pr-12 lg:w-4/6  flex flex-col  items-center justify-center '>
           <div class=' rounded w-full  text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
             <span class='text-green-400  text-base lg:text-xl font-mono'> 01.</span> 
