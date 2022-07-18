@@ -110,15 +110,15 @@
       visibility='visible'
     }}
     id='skillset'
-    class={`${visibility} gap-8 w-full flex justify-center items-center flex-col`}
+    class={`${visibility} gap-8 w-full  flex justify-center items-center flex-col`}
   >
     <div class='text-gray-light w-full px-6 lg:px-0 lg:w-1/2 rounded   text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
       <span class='text-green-400  text-base lg:text-xl font-mono'> 03.</span> 
-      <span class='text-left whitespace-nowrap font-bold'>Technologies I've worked with</span>
+      <span class='text-left font-bold'>Skills</span>
       <div class='h-0.5 w-full bg-secondary mb-3.5 '></div>
     </div>
     <div>
-      <p class='text-gray text-xs lg:text-sm font-mono italic px-6  whitespace-nowrap'><span class='text-green-400'>*</span> Percentages aren't fully representative</p>
+      <p class='text-gray text-xs lg:text-sm font-mono italic px-6  lg:whitespace-nowrap'><span class='text-green-400'>*</span> Percentages aren't fully representatives</p>
     </div>
     <div class='w-full px-8 lg:px-0 lg:w-1/3 flex flex-col gap-8'>
       {#each data.slice(0, currentItems) as item, index}

@@ -9,7 +9,7 @@ import { ArrowUpCircleIcon ,UserIcon, GithubIcon, AtSignIcon, PhoneCallIcon, Map
 
 <footer id="footer" class=' relative bg-secondary py-4 flex flex-col items-center text-gray-300 text-sm'> 
 
-  <a href='#home' class='h-12 w-12 rounded-full  opacity-80 bg-secondary  transition-color hover-bg-green-200 transition absolute  flex items-center justify-center cursor-pointer -top-5   animate-bounce' >
+  <a href='#home' class='h-12 w-12 rounded-full  opacity-80 bg-secondary  transition-color hover-bg-green-200 transition absolute  flex items-center justify-center cursor-pointer -top-12   animate-bounce' >
 		<ArrowUpCircleIcon class='w-full h-full text-green-400'/>
   </a>
 	<div class='flex  text-center pb-4  flex-col items-center lg:items-start '>
