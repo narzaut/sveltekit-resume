@@ -5,7 +5,7 @@
   export let data: any;
 </script>
 
-<header class='main_section'>
+<header id='home' class='main_section'>
   <NavBar data={data.navBar} buttonText={data.button}/>
   <Content title={data.title} description={data.description} />
   <ArrowDown href='about'/>

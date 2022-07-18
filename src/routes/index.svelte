@@ -4,6 +4,7 @@
   import Skillset from '../components/skillset.svelte'
   import Experience from '../components/experience.svelte';
   import Portfolio from '../components/portfolio.svelte'
+  import Footer from '../components/footer.svelte'
   import data from '../lang/spanish.json'
 
 
@@ -14,4 +15,5 @@
   <Experience  />
   <Skillset />
   <Portfolio />
+  <Footer data={data.footer} aboutData={data.about}/>
 </div>
