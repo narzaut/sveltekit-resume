@@ -39,12 +39,16 @@
     {#each data.items as item, index}
       <NavItem href={item.href} itemName={item.name} index={index}/>
 	{/each}
-
-    <LocaleSwitcher
-      locale={$locale}
-      on:locale-changed = { e =>
-        setupI18n({ withLocale: e.detail }) 
-      }
-    />
+    <div
+        in:fly={{x: 400, duration: 900, delay: 750}}
+    >
+        <LocaleSwitcher
+            locale={$locale}
+            on:locale-changed = { e =>
+              setupI18n({ withLocale: e.detail }) 
+            }
+        />
+    </div>
+    
   </div>
 </nav>
