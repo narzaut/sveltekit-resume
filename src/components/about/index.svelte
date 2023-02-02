@@ -24,6 +24,7 @@
   <div 
     
     id="about_section" 
+    aria-label="About section"
     class={`${visibility}  bg-primary flex w-full  text-gray-light flex-row justify-center `}
   >
     <div class={`flex w-full lg:w-2/3 max-w-7xl flex-col items-center lg:items-start md:text-left md:items-start`}>

@@ -10,6 +10,7 @@
 {#key animate}
     <header 
       id='home_section'
+      aria-label="Home section"
       class={`main_section ${visibility}`}
       use:viewport
         on:enterViewport={() => { 
