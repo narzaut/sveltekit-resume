@@ -70,7 +70,7 @@
             <Button
               className='mt-6'
               onClick={() => {currentItems = currentItems + 3}}
-              href={`#project/${currentItems}`}
+              href={`#project_section/${currentItems}`}
               id="loadmore"
               buttonText="Show more"
             />

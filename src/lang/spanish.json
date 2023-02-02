@@ -4,15 +4,15 @@
             "items": [
                 {
                     "name": "sobre mi",
-                    "href": "about"
+                    "href": "about_section"
                 },
                 {
                     "name": "experiencia",
-                    "href": "experience"
+                    "href": "experience_section"
                 },
                 {
                     "name": "skillset",
-                    "href": "skillset"
+                    "href": "skillset_section"
                 }
             ],
             "locale": [

@@ -9,7 +9,7 @@
 
 {#key animate}
     <header 
-      id='home'
+      id='home_section'
       class={`main_section ${visibility}`}
       use:viewport
         on:enterViewport={() => { 
@@ -19,6 +19,6 @@
     >
         <NavBar />
         <Content />
-        <ArrowDown href='about'/>
+        <ArrowDown href='about_section'/>
     </header>
 {/key}

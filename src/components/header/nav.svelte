@@ -35,7 +35,7 @@
   <div in:fly={{x: -200, duration: 700, delay: 100}} class='h-12 flex text-gray mx-8 text-center justify-center items-center'>
     <span class="text-green-400 mt-2 font-medium italic text-5xl">{'</ia>'}</span>
   </div>
-  <div class='hidden mr-10 gap-8 w-full md:flex justify-end items-center ' id='nav' >
+  <div class='hidden mr-10 gap-8 w-full md:flex justify-end items-center ' id='nav_section' >
     {#each data.items as item, index}
       <NavItem href={item.href} itemName={item.name} index={index}/>
 	{/each}

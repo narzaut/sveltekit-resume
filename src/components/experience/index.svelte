@@ -60,7 +60,7 @@
 {#key animate}
   <div 
    
-    id='experience'
+    id='experience_section'
     class={`${visibility}  bg-primary flex items-center gap-8 flex-col justify-center w-full`}
   >
     <div 

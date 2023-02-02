@@ -105,7 +105,7 @@
 </script>
 {#key animate}
   <div 
-    id='skillset'
+    id='skillset_section'
     class={`${visibility} gap-8 w-full  flex justify-center items-center flex-col`}
   >
     <div 
@@ -135,7 +135,7 @@
                 className='mt-6'
                 id='loadmore'
                 onClick={() => {currentItems = currentItems + 4}}
-                href={`#techbar/${currentItems-7}`}
+                href={`#techbar_section/${currentItems-7}`}
                 buttonText='Show more' 
             />
             {/if}
