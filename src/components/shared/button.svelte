@@ -11,6 +11,7 @@
     <a
       on:click={onClick}
       href={href}
+      aria-label="{`${href}`}" 
       id={id}
       class='w-full h-full flex items-center justify-center'
       >

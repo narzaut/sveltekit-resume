@@ -10,6 +10,7 @@
 <a 
   in:fly="{{x: 400, duration: 900, delay: index * 250}}"
   href="{`#${href}`}" 
+  aria-label="{`${href}`}" 
   class='text-sm lg:text-base whitespace-nowrap inline  rounded  text-gray-light hover-text-green-400 transition '
 >
   <span class='text-green-400'>0{index+1}.</span>
