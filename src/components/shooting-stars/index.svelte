@@ -1,74 +1,26 @@
-<div class='fixed  z-10'>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
+<div class="fixed z-10">
+  <div id="stars" />
+  <div id="stars2" />
+  <div class="stars">
+    {#each Array(10) as _, index (index)}
+      <div class="star" />
+    {/each}
+  </div>
 </div>
 
 <style lang="scss">
-    @mixin sp-layout {
+  @mixin sp-layout {
     @media screen and (max-width: 750px) {
       @content;
     }
   }
-  
-  
+
   @function random_range($min, $max) {
     $rand: random();
     $random_range: $min + floor($rand * (($max - $min) + 1));
     @return $random_range;
   }
-  
+
   .stars {
     position: fixed;
     top: 0;
@@ -77,7 +29,7 @@
     height: 120%;
     transform: rotate(-45deg);
   }
-  
+
   .star {
     $star-count: 10;
     --star-color: var(--secondary);
@@ -85,7 +37,7 @@
     --star-tail-height: 2px;
     --star-width: calc(var(--star-tail-length) / 6);
     --tail-fade-duration: var(--fall-duration);
-  
+
     position: absolute;
     top: var(--top-offset);
     left: 0;
@@ -96,13 +48,14 @@
     border-radius: 50%;
     filter: drop-shadow(0 0 6px currentColor);
     transform: translate3d(127em, 0, 0);
-    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
-    
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
+      tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+
     @include sp-layout {
       // For mobile performance, tail-fade animation will be removed QAQ
       animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
     }
-  
+
     @for $i from 1 through $star-count {
       &:nth-child(#{$i}) {
         --star-tail-length: #{calc(random_range(500em, 750em) / 100)};
@@ -111,8 +64,9 @@
         --fall-delay: #{calc(random_range(0, 6000s) / 1000)};
       }
     }
-  
-    &::before, &::after {
+
+    &::before,
+    &::after {
       position: absolute;
       content: '';
       top: 0;
@@ -123,39 +77,41 @@
       border-radius: inherit;
       animation: blink 2s linear infinite;
     }
-  
+
     &::before {
       transform: rotate(45deg);
     }
-  
+
     &::after {
       transform: rotate(-45deg);
     }
   }
-  
+
   @keyframes fall {
     to {
       transform: translate3d(-30em, 0, 0);
     }
   }
-  
+
   @keyframes tail-fade {
-    0%, 50% {
+    0%,
+    50% {
       width: var(--star-tail-length);
       opacity: 1;
     }
-  
-    70%, 80% {
+
+    70%,
+    80% {
       width: 0;
       opacity: 0.4;
     }
-  
+
     100% {
       width: 0;
       opacity: 0;
     }
   }
-  
+
   @keyframes blink {
     50% {
       opacity: 0.6;

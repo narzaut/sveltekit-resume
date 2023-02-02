@@ -1,13 +1,13 @@
-<script lang='ts'>
-    import Header from '../components/header/index.svelte'
-    import About from '../components/about/index.svelte'
-    import Skillset from '../components/skills/index.svelte'
-    import Experience from '../components/experience/index.svelte';
-    import Portfolio from '../components/portfolio/index.svelte'
-    import Footer from '../components/footer/index.svelte'
-    import ShootingStars from '../components/shooting-stars/index.svelte'
-    import { setupI18n, isLocaleLoaded } from '../lib/i18n';
-    $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
+<script lang="ts">
+  import Header from '../components/header/index.svelte';
+  import About from '../components/about/index.svelte';
+  import Skillset from '../components/skills/index.svelte';
+  import Experience from '../components/experience/index.svelte';
+  import Portfolio from '../components/portfolio/index.svelte';
+  import Footer from '../components/footer/index.svelte';
+  import ShootingStars from '../components/shooting-stars/index.svelte';
+  import { setupI18n, isLocaleLoaded } from '../lib/i18n';
+  $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
 </script>
 
 {#if $isLocaleLoaded}
@@ -15,7 +15,7 @@
     <ShootingStars />
     <Header />
     <About />
-    <Experience  />
+    <Experience />
     <Skillset />
     <Portfolio />
     <Footer />

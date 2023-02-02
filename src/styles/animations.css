@@ -8,7 +8,7 @@
 */
 /* https://daneden.github.io/animate.css/ */
 
-.fadeIn{
+.fadeIn {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -17,16 +17,16 @@
   animation-name: fadeIn;
 }
 
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
 
-.fadeInDown{
+.fadeInDown {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -62,8 +62,6 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-
 
 .fadeInUp {
   -webkit-animation-duration: 1s;
