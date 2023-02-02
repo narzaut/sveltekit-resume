@@ -84,7 +84,7 @@
           onClick={() => {
             currentItems = currentItems + 3;
           }}
-          href={`#project_section/${currentItems}`}
+          href={`#project/${currentItems}`}
           id="loadmore"
           buttonText="Show more"
         />

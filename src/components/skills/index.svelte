@@ -145,7 +145,7 @@
             onClick={() => {
               currentItems = currentItems + 4;
             }}
-            href={`#techbar_section/${currentItems - 7}`}
+            href={`#techbar/${currentItems - 7}`}
             buttonText="Show more"
           />
         {/if}
