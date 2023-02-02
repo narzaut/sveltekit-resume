@@ -33,7 +33,7 @@
 </script>
   <nav   class:scrolled={show} class="z-40 font-mono glass scrolled fixed w-full items-center justify-center py-6 flex select-none  shadow-2xl ">
   <div in:fly={{x: -200, duration: 700, delay: 100}} class='h-12 flex text-gray mx-8 text-center justify-center items-center'>
-    <img  src="/images/logo.png" alt="logo" class='h-full'>
+    <span class="text-green-400 mt-2 font-medium italic text-5xl">{'</ia>'}</span>
   </div>
   <div class='hidden mr-10 gap-8 w-full md:flex justify-end items-center ' id='nav' >
     {#each data.items as item, index}
