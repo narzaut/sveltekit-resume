@@ -1,0 +1,63 @@
+<script lang='ts'>
+    import { createEventDispatcher } from "svelte";
+    import { json } from '../../lib/i18n';
+    import { fly } from 'svelte/transition';
+
+    const dispatch = createEventDispatcher();
+    export let locale: string | null | undefined;
+    type LocaleOption = {
+        name: string,
+        locale: string,
+        flag: string
+    };
+
+    $: showOptions = false;
+    $: options = $json('header.navBar.locale') as LocaleOption[]
+    $: selectedOption = options.filter(o => o.locale === locale)[0];
+
+    function toggleOptions() {
+      showOptions = !showOptions;
+    }
+
+    function selectOption(option: LocaleOption) {
+      selectedOption = option;
+      showOptions = false;
+      dispatch("locale-changed", option.locale);
+    }
+
+  </script>
+  <style>
+    /* ... */
+  </style>
+  <div class="locale-selector border-none select-none">
+      <div class="relative text-gray-200">
+          <div 
+            class="cursor-pointer flex items-center justify-center " 
+            on:click={toggleOptions}
+            on:keydown={toggleOptions}
+          >
+            <img class="w-6 h-4" alt='language flag' src={selectedOption.flag} />
+            <span class="ml-2 mt-0.5 font-medium">{selectedOption.name}</span>
+          </div>
+          {#if showOptions}
+          <div 
+            out:fly="{{y:-30, duration: 200, delay: 0}}" 
+            in:fly="{{y:-30, duration: 400, delay: 0}}" 
+            class="options absolute z-10 flex" 
+            class:hidden={!showOptions}
+          >
+
+            {#each options.filter(o => o !== selectedOption) as option}
+              <div 
+                class="pt-2 option cursor-pointer flex items-center justify-center "
+                on:keydown={() => selectOption(option)}
+                on:click={() => selectOption(option)}
+              >
+                <img class="w-6 h-4 "  alt='language flag' src={option.flag} />
+                <span class="ml-2 font-medium">{option.name}</span>
+              </div>
+            {/each}
+          </div>
+          {/if}
+        </div>
+  </div>

@@ -4,7 +4,7 @@
   import { fade,fly  } from 'svelte/transition';
   import Content from './experience.content.svelte';
   import ExperienceOption from './experience.option.svelte'
-	import viewport from '../utils/useViewportAction';
+	import viewport from '../../utils/useViewportAction';
   let visibility= 'invisible';
   let animate: boolean = false;
 
@@ -59,23 +59,26 @@
 </script>
 {#key animate}
   <div 
-    in:fly="{{y:400, duration: 3000, delay: 500}}"
-    use:viewport
-    on:enterViewport={() => { 
-      visibility ='visible'
-      animate = true
-    }}
+   
     id='experience'
-    class={`${visibility} bg-primary flex items-center gap-8 flex-col justify-center w-full`}
+    class={`${visibility}  bg-primary flex items-center gap-8 flex-col justify-center w-full`}
   >
-    <div class={` flex w-full px-6 lg:px-0 lg:w-2/5 gap-8   flex-col text-gray `}>
+    <div 
+        in:fly="{{y:400, duration: 800, delay: 500}}"
+        use:viewport
+        on:enterViewport={() => { 
+          visibility ='visible'
+          animate = true
+        }}
+        class={`flex  z-30 glass w-full px-6 lg:px-0 lg:w-1/2 gap-8   flex-col text-gray `}
+    >
       <div class='text-gray-light  rounded   text-xl lg:text-3xl flex items-end gap-2 lg:gap-4 text-center md:text-left lg:text-left  '>
-        <span class='text-green-400  text-base lg:text-xl font-mono'> 02.</span> 
+        <span class='text-green-400  text-base lg:text-2xl font-mono'> 02.</span> 
         <span class='text-left whitespace-nowrap font-bold'>Where I've worked</span>
         <div class='h-0.5 w-full bg-secondary mb-3.5 '></div>
       </div>
-      <div class='flex flex-col lg:flex-row'>
-        <div class='w-full overflow-x-auto scrollbar-thumb scrollbar-track lg:w-48 flex flex-row lg:flex-col '>
+      <div class='  flex flex-col lg:flex-row'>
+        <div class=' w-full overflow-x-auto scrollbar-thumb scrollbar-track lg:w-56 flex flex-row lg:flex-col '>
           {#each experiences as experience}
             <ExperienceOption selected={selected} handleClick={handleClick} experience={experience}/>
           {/each}

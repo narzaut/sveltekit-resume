@@ -1,112 +1,132 @@
 {
-	"header": {
-		"navBar":[
-			"Home",
-			"About",
-			"Curriculum",
-			"Portfolio"
-		],
-		"title":"Ignacio Arzaut",
-		"description": "I am a software developer with tons of motivation to work and keep learning!"
-	},
-	"about":{
-		"title":"About me",
-		"description": "I'm a student from Río Cuarto - Córdoba. I consider myself to be a self-teaching person with critical thinking skills who loves to be in front of a computer, those three factors led me to develop a vocation for programming. At this moment I'm primarily focused on front-end with React, although I also have some knowledge and experience working with NodeJS and Express. I'd like to keep developing a MERN Stack Developer profile in the future.",		
-		"contactTitle": "Contact details",
-		"contactDescription": [
-			{
-				"value":"Ignacio Arzaut",
-				"icon":"far fa-user"
-			},
-			{
-				"value":"Río Cuarto, Córdoba, Argentina",
-				"icon":"fas fa-map-pin"
-			},
-			{
-				"value":"i.arzaut@itecriocuarto.org.ar",
-				"icon":"fas fa-at"
-			},
-			{
-				"value":"github.com/narzaut",
-				"icon": "fab fa-github"
-			},
-			{
-				"value":"+54 3584 158246",
-				"icon":"fas fa-phone-alt"
-			}
-		]
-	},
-	"resume":{
-		"education":{
-			"title":"Education",
-			"unrc":{
-				"title": "National University of Río Cuarto",
-				"header":"System Analyst",
-				"status": "Dropped out",
-				"description": "I finished first year as a regular (condition) student in the subjects of Logic, Introduction to Algorithms and Introduction to Algebra. (3/4). I still opted for dropping out because it wasn't fully what I expected it to be."
-			},
-			"itec":{
-				"title": "Technological Institute Río Cuarto",
-				"header": "Software Developer",
-				"status": "On going",
-				"description": "I enjoy this academic experience a lot more. I'm also part of the iTec Lab Team, an institute initiative to insert students into the professional world. "
-			}
-		},
-		"work":{
-			"title":"Work",
-			"escuchaActiva":{
-				"title":"EscuchaActiva Platform",
-				"header":"Front-end developer",
-				"status":"Completed",
-				"description":"As mentioned above, I worked as a member of the iTec Lab Team in the front-end development of a webinar platform. I believe I successfully achieved the mock up design in an optimal and fully responsive way. I had no inconvenients that I couldn't resolve by my own means."
-			}
-		},
-		"skills":{
-			"title":"Skills",
-			"description":"These are some of the technologies/frameworks that I work with. The percentages aren't fully representative."
-		}
-	},
-	"portfolio":{
-		"title":"Portfolio",
-		"description": "These are some of my projects and work.",
-		"projects": {
-			"dictionary":{
-				"id":0,
-				"title":"Dictionary",
-				"description":"This is a React technical test for a software developing company.",
-				"url":"https://narzaut.github.io/diccionario-react/#/",
-				"imgFile":"diccionario-react.webp"
-			},
-			"weatherApp":{
-				"id":1,
-				"title":"Weather App",
-				"description":"First app I made with React",
-				"url":"https://narzaut.github.io/weather-react-app/#/",
-				"imgFile":"weather-app.webp"
-			},
-			"escuchaActiva":{
-				"id":2,
-				"title":"EscuchActiva Platform",
-				"description":"Front-end developer in a webinar platform.",
-				"url":"https://github.com/narzaut",
-				"imgFile":"escuchaactiva.webp"
-			},
-			"expenseTracker":{
-				"id":3,
-				"title":"Expense Tracker",
-				"description":"Second app I made with React.",
-				"url":"https://narzaut.github.io/expense-tracker-react/#/",
-				"imgFile":"expense-tracker.webp"
-			}	
-		}
-		
-	},
-	"footer":{
-		"credits":{
-			"made":"Developed by",
-			"by":"Ignacio Arzaut"
-		},
-		"copyright":"© 2021"
-	}
-
+    "header": {
+        "navBar": {
+            "items": [
+                {
+                    "name": "about me",
+                    "href": "about"
+                },
+                {
+                    "name": "experience",
+                    "href": "experience"
+                },
+                {
+                    "name": "skillset",
+                    "href": "skillset"
+                }
+            ],
+            "locale": [
+                {
+                    "name": "English",
+                    "locale": "en",
+                    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/320px-Flag_of_the_United_States.svg.png"
+                },
+                {
+                    "name": "Spanish",
+                    "locale": "es",
+                    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/320px-Flag_of_Argentina.svg.png"
+                }
+            ]
+        },
+        "introduction": "Hi, my name is",
+        "name": "Ignacio Arzaut",
+        "title": "Software Developer",
+        "description": "I specialize in delivering high-quality IT solutions using a wide array of technologies.\nContinuously learning and growing as a developer.\nCommitted to mastering my craft and solving complex problems with efficient solutions.",
+        "button": {
+            "text": "Download Resume",
+            "link": "https://drive.google.com/u/0/uc?id=1EZP97Ltkf7GV1H9sJhkmPBfohCfflAiF&export=download"
+        }
+    },
+    "about": {
+        "title": "About me",
+        "description": "I am currently employed in a dynamic and challenging environment, where I am responsible for the development of a back-end Node.js micro-service architecture, which provides multiple APIs (REST and RPC) for clients to consume, and integrating with several third party services.\n\nI also havo previous professional experience working in the front-end with React.js, Next.js, Redux Toolkit and more.\n\nIn addition to my software development experience, I also possess knowledge in DevOps tools such as Docker, Docker-Compose, Gitlab CI/CD, DigitalOcean, Nginx, Linux, and Bash\n\nI have the ability to work across the entire stack and deliver results in a timely manner, and I continuously seek opportunities to grow as a developer",
+        "contactDescription": {
+            "name": "Ignacio Arzaut",
+            "location": "Río Cuarto, Córdoba, Argentina",
+            "linkedin": "linkedin.com/in/iarzaut",
+            "email": "i.arzaut@itecriocuarto.org.ar",
+            "github": "github.com/narzaut"
+        }
+    },
+    "resume": {
+        "education": {
+            "title": "Educación",
+            "items": [
+                {
+                    "title": "Universidad Nacional de Río Cuarto",
+                    "header": "Analista en Computación",
+                    "description": "Cursé primer año y regularicé las materias Lógica, Introducción a la Algorítmica e Introducción al Álgebra. (3/4). De todas maneras decidí dejar porque la dirección que tomaba no era lo que esperaba",
+                    "date": {
+                        "from": "05-12-2021",
+                        "until": "02-02-2022"
+                    }
+                },
+                {
+                    "title": "Instituto Tecnológico de Río Cuarto",
+                    "header": "Tecnicatura Superior en Desarrollo de Software",
+                    "description": "Me gustó mucho más la experiencia académica de esta institución, llevo la carrera en buenas condiciones y también formo parte del equipo del iTec Lab (Iniciativa de la institución para introducir a los alumnos al mundo profesional).",
+                    "date": {
+                        "from": "12-02-2022",
+                        "until": "actualidad"
+                    }
+                }
+            ]
+        },
+        "work": {
+            "title": "Trabajo",
+            "items": [
+                {
+                    "title": "Plataforma EscuchActiva",
+                    "header": "Desarrollador front-end",
+                    "status": "Terminado",
+                    "description": "Forme parte del equipo del iTec Lab como programador front-end para el desarrollo de la plataforma EscuchActiva. Se logró el diseño del mock-up provisto de manera optima y full responsive. No tuve inconveniencias que no pudiera resolver por mis propios medios. "
+                }
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos."
+        }
+    },
+    "portfolio": {
+        "title": "Portafolio",
+        "description": "Estos son algunos de mis proyectos y trabajos.",
+        "projects": {
+            "dictionary": {
+                "id": 0,
+                "title": "Diccionario",
+                "description": "Es el integrador de React para una empresa de software.",
+                "url": "https://narzaut.github.io/diccionario-react/#/",
+                "imgFile": "diccionario-react.webp"
+            },
+            "weatherApp": {
+                "id": 1,
+                "title": "Aplicación de clima",
+                "description": "Primera aplicación React.",
+                "url": "https://narzaut.github.io/weather-react-app/#/",
+                "imgFile": "weather-app.webp"
+            },
+            "escuchaActiva": {
+                "id": 2,
+                "title": "Plataforma EscuchActiva",
+                "description": "Desarrollo front-end de una plataforma para webinar de bateria.",
+                "url": "https://github.com/narzaut",
+                "imgFile": "escuchaactiva.webp"
+            },
+            "expenseTracker": {
+                "id": 3,
+                "title": "Gestor de expensas",
+                "description": "Segunda aplicación React.",
+                "url": "https://narzaut.github.io/expense-tracker-react/#/",
+                "imgFile": "expense-tracker.webp"
+            }
+        }
+    },
+    "footer": {
+        "credits": {
+            "made": "Desarrollado por",
+            "by": "Ignacio Arzaut"
+        },
+        "copyright": "© 2021"
+    }
 }

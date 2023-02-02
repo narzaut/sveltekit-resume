@@ -3,5 +3,4 @@
   import "../styles/animations.css";
 </script>
 
-
 <slot />

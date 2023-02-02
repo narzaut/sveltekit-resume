@@ -1,5 +1,5 @@
 <script lang="ts">
-  import {FolderIcon, GithubIcon, ExternalLinkIcon} from 'svelte-feather-icons'
+  import { FolderIcon, GithubIcon, ExternalLinkIcon } from 'svelte-feather-icons'
   export let tech: Array<string>;
   export let title: string;
   export let description: string;

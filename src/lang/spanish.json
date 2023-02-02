@@ -1,121 +1,132 @@
 {
-	"header": {
-		"navBar":[
-			{
-        "name":"Sobre mi",
-        "href":"about"
-      },
-			{
-        "name":"Experiencia",
-        "href":"experience"
-      },
-      {
-        "name":"Skillset",
-        "href":"skillset"
-      }
-		],
-    "button":{
-      "name":"Portafolio",
-      "href":"portafolio"
-    },
-		"title":"Ignacio Arzaut",
-		"description": "I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Simple Comercio."
-	},
-	"about": {
-		"title": "Sobre mi",
-		"description":"Soy un estudiante oriundo de Río Cuarto - Córdoba. Me considero una persona autodidacta, de pensamiento crítico, y me encanta estar al frente de la computadora, estos tres factores me llevaron a despertar mi vocación por la programación. En este momento estoy principalmente enfocado en el front-end con React, pero tengo un poco de conocimiento y experiencia con NodeJS y Express. Aspiro a seguir desarrollando el skillset y profile de un MERN Stack Developer.",
-		"contactTitle": "Contacto",
-		"contactDescription": {
-      "name": "Ignacio Arzaut",
-      "location": "Río Cuarto, Córdoba, Argentina",
-      "email": "arzautignacio@gmail.com",
-      "github": "github.com/narzaut",
-      "phoneNumber": "+54 3585 100178"
-    }
-	},
-	"resume":{
-		"education":{
-			"title":"Educación",
-			"items": [
-        {
-			  	"title": "Universidad Nacional de Río Cuarto",
-			  	"header":"Analista en Computación",
-			  	"description": "Cursé primer año y regularicé las materias Lógica, Introducción a la Algorítmica e Introducción al Álgebra. (3/4). De todas maneras decidí dejar porque la dirección que tomaba no era lo que esperaba",
-          "date": {
-            "from": "05-12-2021",
-            "until": "02-02-2022"
-          }
+    "header": {
+        "navBar": {
+            "items": [
+                {
+                    "name": "sobre mi",
+                    "href": "about"
+                },
+                {
+                    "name": "experiencia",
+                    "href": "experience"
+                },
+                {
+                    "name": "skillset",
+                    "href": "skillset"
+                }
+            ],
+            "locale": [
+                {
+                    "name": "Inglés",
+                    "locale": "en",
+                    "flag": "/images/english-flag.png"
+                },
+                {
+                    "name": "Español",
+                    "locale": "es",
+                    "flag": "/images/arg-flag.png"
+                }
+            ]
         },
-			  {
-			  	"title": "Instituto Tecnológico de Río Cuarto",
-			  	"header": "Tecnicatura Superior en Desarrollo de Software",
-			  	"description": "Me gustó mucho más la experiencia académica de esta institución, llevo la carrera en buenas condiciones y también formo parte del equipo del iTec Lab (Iniciativa de la institución para introducir a los alumnos al mundo profesional).",
-          "date": {
-            "from": "12-02-2022",
-            "until": "actualidad"
-          }
-			  }
-      ]
-    },
-		"work":{
-			"title":"Trabajo",
-      "items": [
-        {
-          "title":"Plataforma EscuchActiva",
-				  "header":"Desarrollador front-end",
-				  "status":"Terminado",
-				  "description":"Forme parte del equipo del iTec Lab como programador front-end para el desarrollo de la plataforma EscuchActiva. Se logró el diseño del mock-up provisto de manera optima y full responsive. No tuve inconveniencias que no pudiera resolver por mis propios medios. "
+        "introduction": "Hola, mi nombre es ",
+        "name": "Ignacio Arzaut",
+        "title": "Desarrollador de software",
+        "description": "Me especializo en desarrollar soluciones IT de alta calidad utilizando una amplia gama de tecnologías. Continuamente aprendiendo y creciendo como desarrollador. Comprometido a dominar mi oficio y solucionar problemas complejos con soluciones eficientes.",
+        "button": {
+            "text": "Descargar Curriculum",
+            "link": "https://drive.google.com/u/0/uc?id=1EZP97Ltkf7GV1H9sJhkmPBfohCfflAiF&export=download"
         }
-      ]
-		},
-		"skills":{
-			"title":"Skills",
-			"description":"Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos."
-		}
-	},
-	"portfolio":{
-		"title":"Portafolio",
-		"description": "Estos son algunos de mis proyectos y trabajos.",
-		"projects": {
-			"dictionary":{
-				"id":0,
-				"title":"Diccionario",
-				"description":"Es el integrador de React para una empresa de software.",
-				"url":"https://narzaut.github.io/diccionario-react/#/",
-				"imgFile":"diccionario-react.webp"
-			},
-			"weatherApp":{
-				"id":1, 
-				"title":"Aplicación de clima",
-				"description":"Primera aplicación React.",
-				"url":"https://narzaut.github.io/weather-react-app/#/",
-				"imgFile":"weather-app.webp"
-	
-				
-			},
-			"escuchaActiva":{
-				"id":2, 
-				"title":"Plataforma EscuchActiva",
-				"description":"Desarrollo front-end de una plataforma para webinar de bateria.",
-				"url":"https://github.com/narzaut",
-				"imgFile":"escuchaactiva.webp"
-			},
-			"expenseTracker":{
-				"id":3,
-				"title":"Gestor de expensas",
-				"description":"Segunda aplicación React.",
-				"url":"https://narzaut.github.io/expense-tracker-react/#/",
-				"imgFile":"expense-tracker.webp"
-			}
-		}
-		
-	},
-	"footer":{
-		"credits":{
-			"made":"Desarrollado por",
-			"by":"Ignacio Arzaut"
-		},
-		"copyright":"© 2021"
-	}
-
+    },
+    "about": {
+        "title": "Sobre mi",
+        "description": "Actualmente trabajo en un ambiente dinámico y desafiante, donde soy responsable del desarrollo de una arquitectura de microservicios con Node.js, que brinda múltiples APIs (REST y RPC) para que los clientes las consuman y se integran con varios servicios de terceros.\n\nTambién tengo experiencia profesional trabajando en el frontend con React.js, Next.js, Redux Toolkit y más.\n\nAdemás de mi experiencia en desarrollo de software, también poseo conocimiento en herramientas DevOps como Docker, Docker-Compose, Gitlab CI/CD, DigitalOcean, Nginx, Linux y Bash.\n\nTengo la capacidad de trabajar en el stack completo y entregar resultados en tiempo y forma. Continuamente busco oportunidades para crecer como desarrollador.",
+        "contactDescription": {
+            "name": "Ignacio Arzaut",
+            "location": "Río Cuarto, Córdoba, Argentina",
+            "linkedin": "linkedin.com/in/iarzaut",
+            "email": "i.arzaut@itecriocuarto.org.ar",
+            "github": "github.com/narzaut"
+        }
+    },
+    "resume": {
+        "education": {
+            "title": "Educación",
+            "items": [
+                {
+                    "title": "Universidad Nacional de Río Cuarto",
+                    "header": "Analista en Computación",
+                    "description": "Cursé primer año y regularicé las materias Lógica, Introducción a la Algorítmica e Introducción al Álgebra. (3/4). De todas maneras decidí dejar porque la dirección que tomaba no era lo que esperaba",
+                    "date": {
+                        "from": "05-12-2021",
+                        "until": "02-02-2022"
+                    }
+                },
+                {
+                    "title": "Instituto Tecnológico de Río Cuarto",
+                    "header": "Tecnicatura Superior en Desarrollo de Software",
+                    "description": "Me gustó mucho más la experiencia académica de esta institución, llevo la carrera en buenas condiciones y también formo parte del equipo del iTec Lab (Iniciativa de la institución para introducir a los alumnos al mundo profesional).",
+                    "date": {
+                        "from": "12-02-2022",
+                        "until": "actualidad"
+                    }
+                }
+            ]
+        },
+        "work": {
+            "title": "Trabajo",
+            "items": [
+                {
+                    "title": "Plataforma EscuchActiva",
+                    "header": "Desarrollador front-end",
+                    "status": "Terminado",
+                    "description": "Forme parte del equipo del iTec Lab como programador front-end para el desarrollo de la plataforma EscuchActiva. Se logró el diseño del mock-up provisto de manera optima y full responsive. No tuve inconveniencias que no pudiera resolver por mis propios medios. "
+                }
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos."
+        }
+    },
+    "portfolio": {
+        "title": "Portafolio",
+        "description": "Estos son algunos de mis proyectos y trabajos.",
+        "projects": {
+            "dictionary": {
+                "id": 0,
+                "title": "Diccionario",
+                "description": "Es el integrador de React para una empresa de software.",
+                "url": "https://narzaut.github.io/diccionario-react/#/",
+                "imgFile": "diccionario-react.webp"
+            },
+            "weatherApp": {
+                "id": 1,
+                "title": "Aplicación de clima",
+                "description": "Primera aplicación React.",
+                "url": "https://narzaut.github.io/weather-react-app/#/",
+                "imgFile": "weather-app.webp"
+            },
+            "escuchaActiva": {
+                "id": 2,
+                "title": "Plataforma EscuchActiva",
+                "description": "Desarrollo front-end de una plataforma para webinar de bateria.",
+                "url": "https://github.com/narzaut",
+                "imgFile": "escuchaactiva.webp"
+            },
+            "expenseTracker": {
+                "id": 3,
+                "title": "Gestor de expensas",
+                "description": "Segunda aplicación React.",
+                "url": "https://narzaut.github.io/expense-tracker-react/#/",
+                "imgFile": "expense-tracker.webp"
+            }
+        }
+    },
+    "footer": {
+        "credits": {
+            "made": "Desarrollado por",
+            "by": "Ignacio Arzaut"
+        },
+        "copyright": "© 2021"
+    }
 }
