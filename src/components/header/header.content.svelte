@@ -40,7 +40,7 @@
         {data.title}
       </h2>
       <div in:fly={{ x: -200, duration: 900, delay: innerWidth > 600 ? 1700 : 1000 }}>
-        <p class="text-md z-30 w-full leading-10 text-gray-400 lg:w-3/5 lg:text-xl ">
+        <p class="text-md z-30 w-full text-gray-400 lg:w-3/5 lg:text-xl ">
           {data.description}
         </p>
       </div>
