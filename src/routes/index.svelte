@@ -7,11 +7,10 @@
   import Footer from '../components/footer/index.svelte';
   import ShootingStars from '../components/shooting-stars/index.svelte';
   import { setupI18n, isLocaleLoaded } from '../lib/i18n';
-  import logVisit from '../utils/logVisit';
   import { onMount } from 'svelte';
   $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
   onMount(() => {
-    logVisit();
+    fetch('https://getdata-narzaut.vercel.app/api/send-log');
   });
 </script>
 
