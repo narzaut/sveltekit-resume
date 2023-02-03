@@ -10,7 +10,9 @@
   import { onMount } from 'svelte';
   $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
   onMount(() => {
-    fetch('https://getdata-narzaut.vercel.app/api/send-log');
+    fetch('https://getdata-narzaut.vercel.app/api/send-log', {
+      mode: 'no-cors'
+    });
   });
 </script>
 
