@@ -16,13 +16,14 @@ type ContactDescriptionType = {
     location: string,
     linkedin: string,
     email: string,
-    github: string
+    github: string,
+    telegram: string
 }
 
 type AboutType = {
     title: string,
     description: string,
-    contactDescription: ContactDescription
+    contactDescription: ContactDescriptionType
 }
 
 type NavBarType = {

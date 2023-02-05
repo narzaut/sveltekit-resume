@@ -73,7 +73,7 @@
 
 <nav
   in:fly={{ x: -200, duration: 700, delay: 0 }}
-  class=" glass visible fixed left-0 z-30 h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
+  class=" glass fixed left-0 z-30 hidden h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
 >
   <div class="flex h-full max-h-min w-full flex-col items-center justify-between  ">
     <div class="h-1/2 w-full">

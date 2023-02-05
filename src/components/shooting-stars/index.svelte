@@ -3,7 +3,7 @@
   <div id="stars2" />
   <div class="fixed z-10">
     <div class="stars">
-      {#each Array(7) as _, index (index)}
+      {#each Array(6) as _, index (index)}
         <div class="star" />
       {/each}
     </div>
@@ -38,7 +38,7 @@
     --star-tail-length: 6em;
     --star-tail-height: 2px;
     --star-width: calc(var(--star-tail-length) / 6);
-    --tail-fade-duration: var(--fall-duration);
+    --tail-fade-duration: calc(var(--fall-duration));
 
     position: absolute;
     top: var(--top-offset);
@@ -61,7 +61,7 @@
     @for $i from 1 through $star-count {
       &:nth-child(#{$i}) {
         --star-tail-length: #{calc(random_range(300em, 750em) / 100)};
-        --star-tail-height: #{calc(random_range(5em, 20em) / 100)};
+        --star-tail-height: #{calc(random_range(7em, 15em) / 100)};
 
         --top-offset: #{calc(random_range(-2000vh, 13000vh) / 100)};
         --fall-duration: #{calc(random_range(4000, 8000s) / 1000)};
