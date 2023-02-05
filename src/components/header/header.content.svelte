@@ -51,9 +51,9 @@
       </div>
       <div
         in:fly={{ x: 600, duration: 1500, delay: 1700 }}
-        class="levitate mt-40 hidden h-full w-1/3 select-none  lg:mt-12 lg:flex lg:pl-20"
+        class="levitate absolute -right-28 top-0   hidden h-full select-none  lg:flex"
       >
-        <img class="scale-120 lg:scale-200" height="448" src="/images/hero1.png" alt="" />
+        <img class="scale-120 w-full lg:scale-100" src="/images/hero1.png" alt="heroimg" />
       </div>
     </div>
   </div>
