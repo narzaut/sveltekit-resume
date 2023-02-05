@@ -1,19 +1,12 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
-  import { json } from '../../lib/i18n';
   import { fly } from 'svelte/transition';
 
-  const dispatch = createEventDispatcher();
   export let locale: string | null | undefined;
-  type LocaleOption = {
-    name: string;
-    locale: string;
-    flag: string;
-  };
-
+  export let data: LocaleOption[];
+  const dispatch = createEventDispatcher();
   $: showOptions = false;
-  $: options = $json('header.navBar.locale') as LocaleOption[];
-  $: selectedOption = options.filter((o) => o.locale === locale)[0];
+  $: selectedOption = data.filter((o) => o.locale === locale)[0];
 
   function toggleOptions() {
     showOptions = !showOptions;
@@ -43,7 +36,7 @@
         class="options absolute z-10 flex"
         class:hidden={!showOptions}
       >
-        {#each options.filter((o) => o !== selectedOption) as option}
+        {#each data.filter((o) => o !== selectedOption) as option}
           <div
             class="option flex cursor-pointer items-center justify-center pt-2 "
             on:keydown={() => selectOption(option)}

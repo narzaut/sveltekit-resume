@@ -9,6 +9,80 @@ declare namespace App {
 
 }
 
+
+
+type ContactDescriptionType = {
+    name: string,
+    location: string,
+    linkedin: string,
+    email: string,
+    github: string
+}
+
+type AboutType = {
+    title: string,
+    description: string,
+    contactDescription: ContactDescription
+}
+
+type NavBarType = {
+    items: {
+        name: string,
+        href: string
+    }[],
+    locale: LocaleType[]
+}
+
+type HeaderType = {
+    navBar: NavBarType,
+    introduction: string,
+    name: string,
+    title: string,
+    description: string,
+    button: {
+        text: string,
+        link: string
+    }
+}
+
+type LocaleOption = {
+    name: string;
+    locale: string;
+    flag: string;
+  };
+
+type WorkType = {
+    title: string,
+    projects: ExperienceItem[]
+}
+
+type ResumeType = {
+    work: WorkType,
+    skills: SkillsType
+}
+
+type PortfolioProjectType = {
+    tech: string[],
+    title: string,
+    description: string
+}
+
+
+type PortfolioType = {
+    title: string,
+    description: string,
+    projects: PortfolioProjectType[]
+
+}
+
+type FooterType = {
+    credits: {
+        madeBy: string,
+        inspiredBy: string
+    }
+
+}
+
 type ExperienceItem = {
   id: number,
   role: string,
@@ -22,16 +96,16 @@ type ExperienceItem = {
   achievements: string[]
 }
 
-type Skill = {
+type SkillType = {
     name: string,
     icon: string
 }
-type Skills = {
+type SkillsType = {
     title: string,
     description: string,
-    front: Skill[],
-    back: Skill[],
-    infra: Skill[]
+    front: SkillType[],
+    back: SkillType[],
+    infra: SkillType[]
 }
 
 declare namespace svelte.JSX {

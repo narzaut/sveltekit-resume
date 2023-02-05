@@ -150,7 +150,7 @@
   }
 
   .star {
-    $star-count: 10;
+    $star-count: 8;
     --star-color: var(--secondary);
     --star-tail-length: 6em;
     --star-tail-height: 2px;
@@ -179,8 +179,8 @@
       &:nth-child(#{$i}) {
         --star-tail-length: #{calc(random_range(500em, 750em) / 100)};
         --top-offset: #{calc(random_range(-2000vh, 13000vh) / 100)};
-        --fall-duration: #{calc(random_range(6000s, 12000s) / 1000)};
-        --fall-delay: #{calc(random_range(0, 6000s) / 1000)};
+        --fall-duration: #{calc(random_range(6000s, 10000s) / 1000)};
+        --fall-delay: #{calc(random_range(2000, 9000s) / 1000)};
       }
     }
 

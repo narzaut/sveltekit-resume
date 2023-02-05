@@ -1,21 +1,8 @@
 <script lang="ts">
   import AboutCard from './about.card.svelte';
-  import TechItem from '../shared/tech.item.svelte';
   import { fly } from 'svelte/transition';
   import viewport from '../../utils/useViewportAction';
-  import { json } from '../../lib/i18n';
-  $: data = $json('about') as {
-    title: string;
-    description: string;
-    contactDescription: {
-      name: string;
-      location: string;
-      linkedin: string;
-      email: string;
-      github: string;
-      phoneNumber: string;
-    };
-  };
+  export let data: AboutType;
   let animate: boolean = false;
   let visibility: string = 'invisible';
 </script>
@@ -24,7 +11,7 @@
   <div
     id="about_section"
     aria-label="About section"
-    class={`${visibility}  bg-primary text-gray-light flex  w-full flex-row justify-center `}
+    class={`${visibility}  bg-primary flex w-full  flex-row justify-center text-gray-light `}
   >
     <div
       class={`flex w-full max-w-7xl flex-col items-center md:items-start md:text-left lg:w-2/3 lg:items-start`}
@@ -51,7 +38,7 @@
           <div class="flex flex-col items-center justify-center gap-6 font-medium lg:items-start">
             <span
               style="white-space: pre-line"
-              class="text-gray-light text-sm  leading-6 lg:text-lg lg:leading-8"
+              class="text-sm leading-6  text-gray-light lg:text-lg lg:leading-8"
             >
               {data.description}
             </span>

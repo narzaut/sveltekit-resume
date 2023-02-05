@@ -11,7 +11,7 @@
   <a href={`#${href}`} aria-label={`${href}`}>
     <ArrowDownCircleIcon
       size="2.5x"
-      class="text-gray hover-text-green-400 relative bottom-4 inline animate-bounce cursor-pointer transition-colors lg:bottom-12 lg:bottom-5"
+      class="text-gray hover-text-green-400 relative bottom-4 inline animate-bounce cursor-pointer transition-colors lg:bottom-12 "
     />
   </a>
 </div>

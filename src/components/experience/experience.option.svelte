@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { fade, slide } from 'svelte/transition';
   export let handleClick: any;
   export let experience: ExperienceItem;
   export let selected: number;

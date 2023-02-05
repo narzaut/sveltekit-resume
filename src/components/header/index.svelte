@@ -3,6 +3,8 @@
   import Content from './header.content.svelte';
   import ArrowDown from '../shared/arrow.down.svelte';
   import viewport from '../../utils/useViewportAction';
+
+  export let data: HeaderType;
   let animate: boolean = false;
   let visibility: string = 'invisible';
 </script>
@@ -18,8 +20,8 @@
       visibility = 'visible';
     }}
   >
-    <NavBar />
-    <Content />
+    <NavBar data={data.navBar} />
+    <Content {data} />
     <ArrowDown href="about_section" />
   </header>
 {/key}

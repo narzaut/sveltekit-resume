@@ -1,413 +1,449 @@
 {
-    "header": {
-        "navBar": {
-            "items": [
-                {
-                    "name": "sobre mi",
-                    "href": "about_section"
-                },
-                {
-                    "name": "skillset",
-                    "href": "skillset_section"
-                },
-                {
-                    "name": "experiencia",
-                    "href": "experience_section"
-                }
-            ],
-            "locale": [
-                {
-                    "name": "Inglés",
-                    "locale": "en",
-                    "flag": "/images/english-flag.png"
-                },
-                {
-                    "name": "Español",
-                    "locale": "es",
-                    "flag": "/images/arg-flag.png"
-                }
-            ]
-        },
-        "introduction": "Hola, mi nombre es ",
-        "name": "Ignacio Arzaut",
-        "title": "Desarrollador de software",
-        "description": "Me especializo en desarrollar soluciones IT de alta calidad utilizando una amplia gama de tecnologías. Continuamente aprendiendo y creciendo como desarrollador. Comprometido a dominar mi oficio y resolver problemas complejos con soluciones eficientes.",
-        "button": {
-            "text": "Descargar Curriculum",
-            "link": "https://drive.google.com/u/0/uc?id=1EZP97Ltkf7GV1H9sJhkmPBfohCfflAiF&export=download"
-        }
-    },
-    "about": {
-        "title": "Sobre mi",
-        "description": "Actualmente trabajo en un ambiente dinámico y desafiante, donde soy responsable del desarrollo de una arquitectura de microservicios con Node.js, que brinda múltiples APIs (REST y RPC) para que los clientes las consuman y se integran con varios servicios de terceros.\n\nTambién tengo experiencia profesional trabajando en el frontend con React.js, Next.js, Redux Toolkit y más.\n\nAdemás de mi experiencia en desarrollo de software, también poseo conocimiento en herramientas DevOps como Docker, Docker-Compose, Gitlab CI/CD, DigitalOcean, Nginx, Linux y Bash.\n\nTengo la capacidad de trabajar en el stack completo y entregar resultados en tiempo y forma. Continuamente busco oportunidades para crecer como desarrollador.",
-        "contactDescription": {
+    "data": {
+        "header": {
+            "navBar": {
+                "items": [
+                    {
+                        "name": "inicio",
+                        "href": "home_section"
+                    },
+                    {
+                        "name": "sobre mi",
+                        "href": "about_section"
+                    },
+                    {
+                        "name": "skillset",
+                        "href": "skillset_section"
+                    },
+                    {
+                        "name": "experiencia",
+                        "href": "experience_section"
+                    },
+                    {
+                        "name": "portafolio",
+                        "href": "portfolio_section"
+                    }
+                ],
+                "locale": [
+                    {
+                        "name": "Inglés",
+                        "locale": "en",
+                        "flag": "/images/english-flag.png"
+                    },
+                    {
+                        "name": "Español",
+                        "locale": "es",
+                        "flag": "/images/arg-flag.png"
+                    }
+                ]
+            },
+            "introduction": "Hola, mi nombre es ",
             "name": "Ignacio Arzaut",
-            "location": "Río Cuarto, Córdoba, Argentina",
-            "linkedin": "linkedin.com/in/iarzaut",
-            "email": "i.arzaut@itecriocuarto.org.ar",
-            "github": "github.com/narzaut"
-        }
-    },
-    "resume": {
-        "education": {
-            "title": "Educación",
-            "items": [
-                {
-                    "title": "Universidad Nacional de Río Cuarto",
-                    "header": "Analista en Computación",
-                    "description": "Cursé primer año y regularicé las materias Lógica, Introducción a la Algorítmica e Introducción al Álgebra. (3/4). De todas maneras decidí dejar porque la dirección que tomaba no era lo que esperaba",
-                    "date": {
-                        "from": "05-12-2021",
-                        "until": "02-02-2022"
-                    }
-                },
-                {
-                    "title": "Instituto Tecnológico de Río Cuarto",
-                    "header": "Tecnicatura Superior en Desarrollo de Software",
-                    "description": "Me gustó mucho más la experiencia académica de esta institución, llevo la carrera en buenas condiciones y también formo parte del equipo del iTec Lab (Iniciativa de la institución para introducir a los alumnos al mundo profesional).",
-                    "date": {
-                        "from": "12-02-2022",
-                        "until": "actualidad"
-                    }
-                }
-            ]
+            "title": "Desarrollador de software",
+            "description": "Me especializo en desarrollar soluciones IT de alta calidad utilizando una amplia gama de tecnologías. Continuamente aprendiendo y creciendo como desarrollador. Comprometido a dominar mi oficio y resolver problemas complejos con soluciones eficientes.",
+            "button": {
+                "text": "Descargar Curriculum",
+                "link": "https://drive.google.com/u/0/uc?id=1EZP97Ltkf7GV1H9sJhkmPBfohCfflAiF&export=download"
+            }
         },
-        "work": {
-            "title": "Trabajo Profesional",
+        "about": {
+            "title": "Sobre mi",
+            "description": "Actualmente trabajo en un ambiente dinámico y desafiante, donde soy responsable del desarrollo de una arquitectura de microservicios con Node.js, que brinda múltiples APIs (REST y RPC) para que los clientes las consuman y se integran con varios servicios de terceros.\n\nTambién tengo experiencia profesional trabajando en el frontend con React.js, Next.js, Redux Toolkit y más.\n\nAdemás de mi experiencia en desarrollo de software, también poseo conocimiento en herramientas DevOps como Docker, Docker-Compose, Gitlab CI/CD, DigitalOcean, Nginx, Linux y Bash.\n\nTengo la capacidad de trabajar en el stack completo y entregar resultados en tiempo y forma. Continuamente busco oportunidades para crecer como desarrollador.",
+            "contactDescription": {
+                "name": "Ignacio Arzaut",
+                "location": "Río Cuarto, Córdoba, Argentina",
+                "linkedin": "linkedin.com/in/iarzaut",
+                "email": "i.arzaut@itecriocuarto.org.ar",
+                "github": "github.com/narzaut"
+            }
+        },
+        "resume": {
+            "education": {
+                "title": "Educación",
+                "items": [
+                    {
+                        "title": "Universidad Nacional de Río Cuarto",
+                        "header": "Analista en Computación",
+                        "description": "Cursé primer año y regularicé las materias Lógica, Introducción a la Algorítmica e Introducción al Álgebra. (3/4). De todas maneras decidí dejar porque la dirección que tomaba no era lo que esperaba",
+                        "date": {
+                            "from": "05-12-2021",
+                            "until": "02-02-2022"
+                        }
+                    },
+                    {
+                        "title": "Instituto Tecnológico de Río Cuarto",
+                        "header": "Tecnicatura Superior en Desarrollo de Software",
+                        "description": "Me gustó mucho más la experiencia académica de esta institución, llevo la carrera en buenas condiciones y también formo parte del equipo del iTec Lab (Iniciativa de la institución para introducir a los alumnos al mundo profesional).",
+                        "date": {
+                            "from": "12-02-2022",
+                            "until": "actualidad"
+                        }
+                    }
+                ]
+            },
+            "work": {
+                "title": "Trabajo Profesional",
+                "projects": [
+                    {
+                      "id": 0,
+                      "role": "Backend Developer",
+                      "projectName": "Simple Comercio",
+                      "business": "Simple Comercio",
+                      "description": {
+                        "text": "This is the most complex and challenging project and the one where I've learned the most.\n\nI'm working as the lead back-end developer for an e-commerce platform, where my main responsibilities are designing and building a node.js micro-service architecture which provides APIs (REST and RPC) for clients to consume and integrates with several third party services.",
+                        "techTools": [
+                            "Node.js",
+                            "RabbitMQ",
+                            "Typescript",
+                            "Express",
+                            "MongoDB",
+                            "PostgreSQL",
+                            "Docker",
+                            "Docker-Compose",
+                            "DO Cloud Services",
+                            "Firebase Auth",
+                            "Grafana Loki",
+                            "Cloud Messaging",
+                            "Jest/Supertest",
+                            "Swagger",
+                            "Gitlab CI/CD",
+                            "Nginx",
+                            "Linux",
+                            "Bash Scripting"
+                        ]
+                      },
+                      "achievements": [
+                        "Designed, built and maintained back-end micro-service architecture",
+                        "Designed and implemented databases for each micro-service (MongoDB and PostgreSQL)",
+                        "Designed and implemented multiple REST and RPC APIs ",
+                        "Integrated with many different third party services",
+                        "Dockerized backend infrastructure with Docker-Compose and automated deploy with Bash scripts",
+                        "Built custom npm module for a company requirements",
+                        "Implemented RPC direct-reply pattern to communicate microservices between each other",
+                        "Implemented notifications service (push, email, sms, whatsapp, discord)",
+                        "Implemented monitoring service (Grafana Loki)",
+                        "Backend infrastructure deployment in cloud platforms such as DigitalOcean",
+                        "Set up web server and reverse proxy with Nginx",
+                        "Wrote integrations tests"
+                      ],
+                      "date": "December 2021 - Present"
+                    },
+                    {
+                        "id": 1,
+                        "role": "Full Stack Developer",
+                        "projectName": "Sindicarne",
+                        "business": "iTec Labs",
+                        "description": {
+                            "text": "I was responsible of designing, developing and deploying two frontend apps and a backend API for a client.\n\nThe first app is a registration form for employees, and the second one is an admin panel where they could perform different operations upon the registrations.\n\nThe backend API is responsible of managing the employees data, authentication, and the business logics.\n",
+                            "techTools": [
+                                "React.js",
+                                "Node.js",
+                                "Express.js",
+                                "Fetch API",
+                                "Redux",
+                                "Tailwind CSS",
+                                "PostgreSQL",
+                                "JWT",
+                                "Linux",
+                                "Bash scripting"
+                            ]
+                        },
+                        "achievements": [
+                          "Designed and implemented front-end and back-end from scratch",
+                          "Successfully merged this project with an existing infrastructure and business logics",
+                          "Consumed and rendered data from a REST API",
+                          "Manually deployed all three applications to a server instance",
+                          "Implemented a search engine",
+                          "Implemented token based authentication and authorization",
+                          "Integrated with different third party services",
+                          "Achieved client expectations in a timely manner"
+                        ],
+                        "date": "December 2021 - Present"
+                    },
+                    {
+                        "id": 2,
+                        "role": "Frontend Developer",
+                        "projectName": "EscuchActiva",
+                        "business": "iTec Labs",
+                        "description": {
+                            "text": "This project was a platform was an ongoing project that offered online courses for drum players.\n\nAs my first project, my only responsibilities were completing frontend tasks that were given to me.\n\nThese included handling permissions, creating a live chat, integrating a video player, rendering pdf files, and more.\n",
+                            "techTools": [
+                                "React.js",
+                                "Context API",
+                                "LocalStorage",
+                                "Fetch API",
+                                "Tailwind CSS",
+                                "WebSocket",
+                                "React Video Player",
+                                "React PDF Viewer"
+    
+                            ]
+                        },
+                        "achievements": [
+                            "Consumed and rendered data from a REST API",
+                          "Implemented a live chat",
+                          "Implemented a streaming video player",
+                          "Implemented a pdf viewer",
+                          "Implemented pdf zoom feature",
+                          "Integrated with different third party services",
+                          "Achieved client expectations in a timely manner"
+                        ],
+                        "date": "December 2021 - Present"
+                    },
+                    {
+                        "id": 3,
+                        "role": "Fullstack Trainee",
+                        "projectName": "iTec Labs",
+                        "business": "iTec Labs",
+                        "description": {
+                            "text": "iTec Labs is a software factory owned by the same institute where I studied. They provided the opportunity to a selected number of students to have our first job experiences.\n\n I worked in several projects that involved learning and implementing those learned skills in a dynamic and challenging environment. This is where I learned my first professional experiences, and everything that comes with it.",
+                            "techTools": [
+                                "React.js",
+                                "Node.js",
+                                "Express.js",
+                                "Context API",
+                                "LocalStorage",
+                                "Fetch API",
+                                "Tailwind CSS",
+                                "MongoDB", 
+                                "PostgreSQL",
+                                "Redux",
+                                "Linux",
+                                "JWT",
+                                "Nginx",
+                                "Bash scripting"
+    
+                            ]
+                        },
+                        "achievements": [
+                          "Implemented the fundamentals of React",
+                          "Implemented the fundamentals of API REST with Express.js",
+                          "Implemented state management with Redux",
+                          "Implemented token based authentication and authorization with JWT",
+                          "Integrated with different third party services",
+                          "Worked as I learned in a fast paced environment",
+                          "Deployed frontend and back applications",
+                          "Set up reverse proxy and web server with Nginx",
+                          "Designed and implemented relational and no relationals databases"
+                        ],
+                        "date": "December 2021 - Present"
+                    }
+                  ]
+            },
+            "skills": {
+                "title": "Skills",
+                "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos.",
+                "front": [
+                    {
+                      "name": "HTML",
+                      "icon": "html-1.svg"
+                    },
+                    {
+                      "name": "CSS",
+                      "icon": "css-3.svg"
+                    },
+                    {
+                      "name": "JavaScript",
+                      "icon": "logo-javascript.svg"
+                    },
+                    {
+                      "name": "TypeScript",
+                      "icon": "typescript.svg"
+                    },
+                    {
+                      "name": "TailwindCSS",
+                      "icon": "tailwindcss.svg"
+                    },
+                    {
+                      "name": "Next.js",
+                      "icon": "next-js.svg"
+                    },
+                
+                    {
+                      "name": "React",
+                      "icon": "react-2.svg"
+                    },
+                    {
+                      "name": "Redux",
+                      "icon": "redux.svg"
+                    },
+                    {
+                      "name": "Svelte",
+                      "icon": "svelte-1.svg"
+                    },
+                    {
+                      "name": "i18next",
+                      "icon": "i18next-icon.svg"
+                    }
+                ],
+                "back": [
+                    {
+                        "name": "Node.js",
+                        "icon": "nodejs-icon.svg"
+                    },
+                    {
+                        "name": "Express.js",
+                        "icon": "express-109.svg"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "icon": "mongodb-icon-1.svg"
+                    },
+                    {
+                        "name": "PostgreSQL",
+                        "icon": "postgresql.svg"
+                    },
+                    {
+                        "name": "AWS SQS",
+                        "icon": "aws-sqs.svg"
+                    },
+                    {
+                        "name": "AWS S3",
+                        "icon": "amazon-s3.svg"
+                    },
+                    {
+                        "name": "RabbitMQ",
+                        "icon": "rabbitmq.svg"
+                    },
+                    {
+                        "name": "Firebase",
+                        "icon": "firebase-1.svg"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "icon": "logo-javascript.svg"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "icon": "typescript.svg"
+                    },
+                    {
+                        "name": "Twilio",
+                        "icon": "twilio.svg"
+                    },
+                    {
+                        "name": "Sendgrid",
+                        "icon": "sendgrid-1.svg"
+                    }
+                ],
+                "infra":[
+                    {
+                        "name": "DevOps",
+                        "icon": "devops-2.svg"
+                    },
+                    {
+                        "name": "DigitalOcean",
+                        "icon": "digitalocean-icon-1.svg"
+                    },
+                    {
+                        "name": "Docker",
+                        "icon": "docker.svg"
+                    },
+                    {
+                        "name": "AWS EC2",
+                        "icon": "aws-ec2.svg"
+                    },
+                    {
+                        "name": "RabbitMQ",
+                        "icon": "rabbitmq.svg"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "git-icon.svg"
+                    },
+                    {
+                        "name": "GitLab",
+                        "icon": "gitlab.svg"
+                    },
+                    {
+                        "name": "Bash",
+                        "icon": "bash-1.svg"
+                    },
+                    {
+                        "name": "Linux",
+                        "icon": "linux-tux.svg"
+                    },
+                    {
+                        "name": "Grafana",
+                        "icon": "grafana-icon.svg"
+                    },
+                    {
+                        "name": "Nginx",
+                        "icon": "nginx-1.svg"
+                    },
+                    {
+                        "name": "Vercel",
+                        "icon": "vercel.svg"
+                    }
+                ]
+            }
+        },
+        "portfolio": {
+            "title": "Portafolio",
+            "description": "Estos son algunos de mis proyectos y trabajos.",
             "projects": [
                 {
-                  "id": 0,
-                  "role": "Backend Developer",
-                  "projectName": "Simple Comercio",
-                  "business": "Simple Comercio",
-                  "description": {
-                    "text": "This is the most complex and challenging project and the one where I've learned the most.\n\nI'm working as the lead back-end developer for an e-commerce platform, where my main responsibilities are designing and building a node.js micro-service architecture which provides APIs (REST and RPC) for clients to consume and integrates with several third party services.",
-                    "techTools": [
+                    "tech": [
+                        "Next.js",
                         "Node.js",
-                        "RabbitMQ",
-                        "Typescript",
-                        "Express",
-                        "MongoDB",
-                        "PostgreSQL",
-                        "Docker",
-                        "Docker-Compose",
-                        "DO Cloud Services",
-                        "Firebase Auth",
-                        "Grafana Loki",
-                        "Cloud Messaging",
-                        "Jest/Supertest",
-                        "Swagger",
-                        "Gitlab CI/CD",
-                        "Nginx",
-                        "Linux",
-                        "Bash Scripting"
-                    ]
-                  },
-                  "achievements": [
-                    "Designed, built and maintained back-end micro-service architecture",
-                    "Designed and implemented databases for each micro-service (MongoDB and PostgreSQL)",
-                    "Designed and implemented multiple REST and RPC APIs ",
-                    "Integrated with many different third party services",
-                    "Dockerized backend infrastructure with Docker-Compose and automated deploy with Bash scripts",
-                    "Built custom npm module for a company requirements",
-                    "Implemented RPC direct-reply pattern to communicate microservices between each other",
-                    "Implemented notifications service (push, email, sms, whatsapp, discord)",
-                    "Implemented monitoring service (Grafana Loki)",
-                    "Backend infrastructure deployment in cloud platforms such as DigitalOcean",
-                    "Set up web server and reverse proxy with Nginx",
-                    "Wrote integrations tests"
-                  ],
-                  "date": "December 2021 - Present"
-                },
-                {
-                    "id": 1,
-                    "role": "Full Stack Developer",
-                    "projectName": "Sindicarne",
-                    "business": "iTec Labs",
-                    "description": {
-                        "text": "I was responsible of designing, developing and deploying two frontend apps and a backend API for a client.\n\nThe first app is a registration form for employees, and the second one is an admin panel where they could perform different operations upon the registrations.\n\nThe backend API is responsible of managing the employees data, authentication, and the business logics.\n",
-                        "techTools": [
-                            "React.js",
-                            "Node.js",
-                            "Express.js",
-                            "Fetch API",
-                            "Redux",
-                            "Tailwind CSS",
-                            "PostgreSQL",
-                            "JWT",
-                            "Linux",
-                            "Bash scripting"
-                        ]
-                    },
-                    "achievements": [
-                      "Designed and implemented front-end and back-end from scratch",
-                      "Successfully merged this project with an existing infrastructure and business logics",
-                      "Consumed and rendered data from a REST API",
-                      "Manually deployed all three applications to a server instance",
-                      "Implemented a search engine",
-                      "Implemented token based authentication and authorization",
-                      "Integrated with different third party services",
-                      "Achieved client expectations in a timely manner"
+                        "Firebase"
                     ],
-                    "date": "December 2021 - Present"
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 },
                 {
-                    "id": 2,
-                    "role": "Frontend Developer",
-                    "projectName": "EscuchActiva",
-                    "business": "iTec Labs",
-                    "description": {
-                        "text": "This project was a platform was an ongoing project that offered online courses for drum players.\n\nAs my first project, my only responsibilities were completing frontend tasks that were given to me.\n\nThese included handling permissions, creating a live chat, integrating a video player, rendering pdf files, and more.\n",
-                        "techTools": [
-                            "React.js",
-                            "Context API",
-                            "LocalStorage",
-                            "Fetch API",
-                            "Tailwind CSS",
-                            "WebSocket",
-                            "React Video Player",
-                            "React PDF Viewer"
-
-                        ]
-                    },
-                    "achievements": [
-                        "Consumed and rendered data from a REST API",
-                      "Implemented a live chat",
-                      "Implemented a streaming video player",
-                      "Implemented a pdf viewer",
-                      "Implemented pdf zoom feature",
-                      "Integrated with different third party services",
-                      "Achieved client expectations in a timely manner"
+                    "tech": [
+                        "Next.js",
+                        "Node.js",
+                        "Firebase"
                     ],
-                    "date": "December 2021 - Present"
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 },
                 {
-                    "id": 3,
-                    "role": "Fullstack Trainee",
-                    "projectName": "iTec Labs",
-                    "business": "iTec Labs",
-                    "description": {
-                        "text": "iTec Labs is a software factory owned by the same institute where I studied. They provided the opportunity to a selected number of students to have our first job experiences.\n\n I worked in several projects that involved learning and implementing those learned skills in a dynamic and challenging environment. This is where I learned my first professional experiences, and everything that comes with it.",
-                        "techTools": [
-                            "React.js",
-                            "Node.js",
-                            "Express.js",
-                            "Context API",
-                            "LocalStorage",
-                            "Fetch API",
-                            "Tailwind CSS",
-                            "MongoDB", 
-                            "PostgreSQL",
-                            "Redux",
-                            "Linux",
-                            "JWT",
-                            "Nginx",
-                            "Bash scripting"
-
-                        ]
-                    },
-                    "achievements": [
-                      "Implemented the fundamentals of React",
-                      "Implemented the fundamentals of API REST with Express.js",
-                      "Implemented state management with Redux",
-                      "Implemented token based authentication and authorization with JWT",
-                      "Integrated with different third party services",
-                      "Worked as I learned in a fast paced environment",
-                      "Deployed frontend and back applications",
-                      "Set up reverse proxy and web server with Nginx",
-                      "Designed and implemented relational and no relationals databases"
+                    "tech": [
+                        "Next.js",
+                        "Node.js",
+                        "Firebase"
                     ],
-                    "date": "December 2021 - Present"
-                }
-              ]
-        },
-        "skills": {
-            "title": "Skills",
-            "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos.",
-            "front": [
-                {
-                  "name": "HTML",
-                  "icon": "html-1.svg"
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 },
                 {
-                  "name": "CSS",
-                  "icon": "css-3.svg"
+                    "tech": [
+                        "Next.js",
+                        "Node.js",
+                        "Firebase"
+                    ],
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 },
                 {
-                  "name": "JavaScript",
-                  "icon": "logo-javascript.svg"
+                    "tech": [
+                        "Next.js",
+                        "Node.js",
+                        "Firebase"
+                    ],
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 },
                 {
-                  "name": "TypeScript",
-                  "icon": "typescript.svg"
-                },
-                {
-                  "name": "TailwindCSS",
-                  "icon": "tailwindcss.svg"
-                },
-                {
-                  "name": "Next.js",
-                  "icon": "next-js.svg"
-                },
-            
-                {
-                  "name": "React",
-                  "icon": "react-2.svg"
-                },
-                {
-                  "name": "Redux",
-                  "icon": "redux.svg"
-                },
-                {
-                  "name": "Svelte",
-                  "icon": "svelte-1.svg"
-                },
-                {
-                  "name": "i18next",
-                  "icon": "i18next-icon.svg"
-                }
-            ],
-            "back": [
-                {
-                    "name": "Node.js",
-                    "icon": "nodejs-icon.svg"
-                },
-                {
-                    "name": "Express.js",
-                    "icon": "express-109.svg"
-                },
-                {
-                    "name": "MongoDB",
-                    "icon": "mongodb-icon-1.svg"
-                },
-                {
-                    "name": "PostgreSQL",
-                    "icon": "postgresql.svg"
-                },
-                {
-                    "name": "AWS SQS",
-                    "icon": "aws-sqs.svg"
-                },
-                {
-                    "name": "AWS S3",
-                    "icon": "amazon-s3.svg"
-                },
-                {
-                    "name": "RabbitMQ",
-                    "icon": "rabbitmq.svg"
-                },
-                {
-                    "name": "Firebase",
-                    "icon": "firebase-1.svg"
-                },
-                {
-                    "name": "JavaScript",
-                    "icon": "logo-javascript.svg"
-                },
-                {
-                    "name": "TypeScript",
-                    "icon": "typescript.svg"
-                },
-                {
-                    "name": "Twilio",
-                    "icon": "twilio.svg"
-                },
-                {
-                    "name": "Sendgrid",
-                    "icon": "sendgrid-1.svg"
-                }
-            ],
-            "infra":[
-                {
-                    "name": "DevOps",
-                    "icon": "devops-2.svg"
-                },
-                {
-                    "name": "DigitalOcean",
-                    "icon": "digitalocean-icon-1.svg"
-                },
-                {
-                    "name": "Docker",
-                    "icon": "docker.svg"
-                },
-                {
-                    "name": "AWS EC2",
-                    "icon": "aws-ec2.svg"
-                },
-                {
-                    "name": "RabbitMQ",
-                    "icon": "rabbitmq.svg"
-                },
-                {
-                    "name": "Git",
-                    "icon": "git-icon.svg"
-                },
-                {
-                    "name": "GitLab",
-                    "icon": "gitlab.svg"
-                },
-                {
-                    "name": "Bash",
-                    "icon": "bash-1.svg"
-                },
-                {
-                    "name": "Linux",
-                    "icon": "linux-tux.svg"
-                },
-                {
-                    "name": "Grafana",
-                    "icon": "grafana-icon.svg"
-                },
-                {
-                    "name": "Nginx",
-                    "icon": "nginx-1.svg"
-                },
-                {
-                    "name": "Vercel",
-                    "icon": "vercel.svg"
+                    "tech": [
+                        "Next.js",
+                        "Node.js",
+                        "Firebase"
+                    ],
+                    "title": "Weather App",
+                    "description": "A single page web app for helping me choose where to travel built with Next.js, Firebase, and Tailwind CSS"
                 }
             ]
-        }
-    },
-    "portfolio": {
-        "title": "Portafolio",
-        "description": "Estos son algunos de mis proyectos y trabajos.",
-        "projects": {
-            "dictionary": {
-                "id": 0,
-                "title": "Diccionario",
-                "description": "Es el integrador de React para una empresa de software.",
-                "url": "https://narzaut.github.io/diccionario-react/#/",
-                "imgFile": "diccionario-react.webp"
-            },
-            "weatherApp": {
-                "id": 1,
-                "title": "Aplicación de clima",
-                "description": "Primera aplicación React.",
-                "url": "https://narzaut.github.io/weather-react-app/#/",
-                "imgFile": "weather-app.webp"
-            },
-            "escuchaActiva": {
-                "id": 2,
-                "title": "Plataforma EscuchActiva",
-                "description": "Desarrollo front-end de una plataforma para webinar de bateria.",
-                "url": "https://github.com/narzaut",
-                "imgFile": "escuchaactiva.webp"
-            },
-            "expenseTracker": {
-                "id": 3,
-                "title": "Gestor de expensas",
-                "description": "Segunda aplicación React.",
-                "url": "https://narzaut.github.io/expense-tracker-react/#/",
-                "imgFile": "expense-tracker.webp"
-            }
-        }
-    },
-    "footer": {
-        "credits": {
-            "made": "Desarrollado por",
-            "by": "Ignacio Arzaut"
         },
-        "copyright": "© 2021"
+        "footer": {
+            "credits": {
+                "made": "Desarrollado por",
+                "by": "Ignacio Arzaut"
+            },
+            "copyright": "© 2021"
+        }
     }
 }

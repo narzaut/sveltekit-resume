@@ -3,14 +3,10 @@
   import Content from './experience.content.svelte';
   import ExperienceOption from './experience.option.svelte';
   import viewport from '../../utils/useViewportAction';
-  import { json } from '../../lib/i18n';
 
   let visibility = 'invisible';
   let animate: boolean = false;
-  export let data: {
-    title: string;
-    projects: Array<ExperienceItem>;
-  };
+  export let data: WorkType;
   const experiences = data.projects;
   let currentExperience: ExperienceItem = experiences[0];
   let selected: number = currentExperience.id;

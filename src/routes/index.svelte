@@ -9,10 +9,12 @@
   import { setupI18n, isLocaleLoaded, json } from '../lib/i18n';
   import { onMount } from 'svelte';
   $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
-  $: data = $json('resume.work') as {
-    title: string;
-    projects: Array<ExperienceItem>;
-  };
+  $: data = $json('data') as any;
+  $: header = data.header as HeaderType;
+  $: about = data.about as AboutType;
+  $: resume = data.resume as ResumeType;
+  $: portfolio = data.portfolio as PortfolioType;
+  $: footer = data.footer as FooterType;
   onMount(async () => {
     //fetch('https://getdata-narzaut-narzaut312.vercel.app/api/send-log', {
     //  mode: 'no-cors'
@@ -21,14 +23,14 @@
 </script>
 
 {#if $isLocaleLoaded}
-  <div class=" flex flex-col gap-12 lg:gap-24 ">
+  <div class=" flex flex-col gap-12 lg:gap-24">
     <ShootingStars />
-    <Header />
-    <About />
-    <Skillset />
-    <Experience {data} />
-    <Portfolio />
-    <Footer />
+    <Header data={header} />
+    <About data={about} />
+    <Skillset data={resume.skills} />
+    <Experience data={resume.work} />
+    <Portfolio data={portfolio} />
+    <Footer data={footer} aboutData={about} />
   </div>
 {:else}
   <p>Loading...</p>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import Item from '../shared/contact.item.svelte';
-  export let contactDescription: any;
+  export let contactDescription: ContactDescriptionType;
   import { LinkedinIcon, UserIcon, GithubIcon, AtSignIcon, MapIcon } from 'svelte-feather-icons';
 </script>
 

@@ -18,6 +18,7 @@ module.exports = {
             },
             height: {
                 '120': '30rem',
+                '18': '4.5rem',
             },
             scale: {
                 '200': '2',
@@ -26,6 +27,7 @@ module.exports = {
             width: {
                 '1/7': '14.2857143%'
             },
+
             textColor: {
                 'gray-light': "#ccd6f6"
             }

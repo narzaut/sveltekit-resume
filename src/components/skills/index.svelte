@@ -3,13 +3,12 @@
   import { MonitorIcon, SettingsIcon, DatabaseIcon, ArchiveIcon } from 'svelte-feather-icons';
   import { fly } from 'svelte/transition';
   import viewport from '../../utils/useViewportAction';
-  import { json } from '../../lib/i18n';
-  let skills: Skills = $json('resume.skills') as Skills;
+  export let data: SkillsType;
   let animate: boolean = false;
   let visibility: string = 'invisible';
   type SelectOptions = 'front' | 'back' | 'infra';
   let selected: SelectOptions = 'back';
-  let current = skills[selected];
+  let current = data[selected];
 
   type inputE = {
     target: {
@@ -21,13 +20,13 @@
     selected = e.target.innerText.toLowerCase() as SelectOptions;
     switch (selected) {
       case 'front':
-        current = skills.front;
+        current = data.front;
         break;
       case 'back':
-        current = skills.back;
+        current = data.back;
         break;
       case 'infra':
-        current = skills.infra;
+        current = data.infra;
         break;
     }
   };
@@ -59,7 +58,7 @@
             icon={index == 0 ? MonitorIcon : index == 1 ? DatabaseIcon : SettingsIcon}
             className={`${
               selected == item.toLowerCase() ? 'transition bg-green-pressed' : ''
-            } w-1/3 text-sm lg:text-lg rounded-none`}
+            } w-1/3 text-sm lg:text-xl rounded-none h-14 items-center justify-center gap-1`}
           />
         {/each}
       </div>
@@ -70,11 +69,11 @@
               in:fly={{ x: -600, duration: 800, delay: 75 * index }}
               class="hover-text-green-400 hover-press-animation flex w-1/3 cursor-pointer items-center justify-center font-mono  font-bold text-gray-light transition lg:w-1/4 "
             >
-              <div class="flex h-40 flex-col  items-center justify-start lg:m-2 ">
+              <div class="mx-2 flex h-40  flex-col items-center justify-start lg:mx-0 lg:my-4 ">
                 <div class=" items-start justify-start text-center">
                   <p class="text-base lg:text-xl ">{item.name}</p>
                 </div>
-                <img class="flex w-20 scale-65 pt-4" src={`/images/logos/${item.icon}`} alt="" />
+                <img class="flex w-28 scale-65" src={`/images/logos/${item.icon}`} alt="" />
               </div>
             </div>
           {/each}

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { fly } from 'svelte/transition';
   import Item from '../shared/tech.item.svelte';
 
   export let items: any;

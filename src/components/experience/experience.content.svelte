@@ -1,12 +1,11 @@
 <script lang="ts">
-  export let experience: ExperienceItem;
   import Item from '../shared/tech.item.svelte';
   import { fly } from 'svelte/transition';
   import Achievements from './content.achievements.svelte';
   import Button from '../shared/button.svelte';
   import { StarIcon } from 'svelte-feather-icons';
   import { BookOpenIcon } from 'svelte-feather-icons';
-  import { each } from 'svelte/internal';
+  export let experience: ExperienceItem;
   let selected: 'achievements' | 'description' = 'description';
   type inputE = {
     target: {
@@ -36,7 +35,7 @@
           icon={index == 0 ? BookOpenIcon : StarIcon}
           className={`${
             selected == item.toLowerCase() ? 'transition bg-green-pressed' : ''
-          } w-1/2 text-sm lg:text-lg rounded-none`}
+          } w-1/2 text-sm lg:text-lg rounded-none flex items-center justify-center gap-2 h-14`}
         />
       {/each}
     </div>
