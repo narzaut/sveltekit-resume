@@ -14,9 +14,9 @@
     projects: Array<ExperienceItem>;
   };
   onMount(async () => {
-    //fetch('https://getdata-narzaut-narzaut312.vercel.app/api/send-log', {
-    //  mode: 'no-cors'
-    //});
+    fetch('https://getdata.vercel.app/api/send-log', {
+      mode: 'no-cors'
+    });
   });
 </script>
 
