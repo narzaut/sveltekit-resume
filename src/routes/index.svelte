@@ -6,13 +6,17 @@
   import Portfolio from '../components/portfolio/index.svelte';
   import Footer from '../components/footer/index.svelte';
   import ShootingStars from '../components/shooting-stars/index.svelte';
-  import { setupI18n, isLocaleLoaded } from '../lib/i18n';
+  import { setupI18n, isLocaleLoaded, json } from '../lib/i18n';
   import { onMount } from 'svelte';
   $: if (!$isLocaleLoaded) setupI18n({ withLocale: 'en' });
-  onMount(() => {
-    fetch('https://getdata-narzaut.vercel.app/api/send-log', {
-      mode: 'no-cors'
-    });
+  $: data = $json('resume.work') as {
+    title: string;
+    projects: Array<ExperienceItem>;
+  };
+  onMount(async () => {
+    //fetch('https://getdata-narzaut-narzaut312.vercel.app/api/send-log', {
+    //  mode: 'no-cors'
+    //});
   });
 </script>
 
@@ -21,8 +25,8 @@
     <ShootingStars />
     <Header />
     <About />
-    <Experience />
     <Skillset />
+    <Experience {data} />
     <Portfolio />
     <Footer />
   </div>

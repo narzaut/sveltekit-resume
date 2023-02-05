@@ -51,34 +51,10 @@
           <div class="flex flex-col items-center justify-center gap-6 font-medium lg:items-start">
             <span
               style="white-space: pre-line"
-              class="text-gray text-sm  leading-6 lg:text-lg lg:leading-8"
+              class="text-gray-light text-sm  leading-6 lg:text-lg lg:leading-8"
             >
               {data.description}
             </span>
-            <div class="mb-4 text-sm lg:text-lg">
-              <span class="text-gray "
-                >These are some of the technologies I've been working with:
-              </span>
-            </div>
-            <div
-              class="flex w-full max-w-sm items-center justify-between gap-4 lg:max-w-xl lg:justify-start lg:gap-16 "
-            >
-              <div class="flex flex-col gap-4">
-                <TechItem text={'Typescript'} />
-                <TechItem text={'NodeJS'} />
-                <TechItem text={'Express'} />
-              </div>
-              <div class="flex flex-col  gap-4">
-                <TechItem text={'SvelteKit'} />
-                <TechItem text={'NextJS'} />
-                <TechItem text={'Tailwind CSS'} />
-              </div>
-              <div class="flex flex-col  gap-4">
-                <TechItem text={'Docker'} />
-                <TechItem text={'Firebase'} />
-                <TechItem text={'RabbitMQ'} />
-              </div>
-            </div>
           </div>
         </div>
         <div class=" relative flex items-center  justify-center lg:w-2/6">

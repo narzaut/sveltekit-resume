@@ -33,7 +33,7 @@
   <a
     href="#home_section"
     aria-label="Home section"
-    class="bg-secondary transition-color hover-bg-green-200  absolute -top-12  flex h-12 w-12 animate-bounce  cursor-pointer items-center justify-center rounded-full opacity-80   transition"
+    class="bg-secondary transition-color hover-bg-green-pressed  absolute -top-12  flex h-12 w-12 animate-bounce  cursor-pointer items-center justify-center rounded-full opacity-80   transition"
   >
     <ArrowUpCircleIcon class="h-full w-full text-green-400" />
   </a>

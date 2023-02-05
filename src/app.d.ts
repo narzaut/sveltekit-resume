@@ -12,9 +12,26 @@ declare namespace App {
 type ExperienceItem = {
   id: number,
   role: string,
+  projectName: string,
   business: string,
+  description: {
+    text: string,
+    techTools: string[]
+  },
   date: string,
-  items: Array<string>
+  achievements: string[]
+}
+
+type Skill = {
+    name: string,
+    icon: string
+}
+type Skills = {
+    title: string,
+    description: string,
+    front: Skill[],
+    back: Skill[],
+    infra: Skill[]
 }
 
 declare namespace svelte.JSX {

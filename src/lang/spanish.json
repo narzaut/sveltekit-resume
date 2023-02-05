@@ -7,12 +7,12 @@
                     "href": "about_section"
                 },
                 {
-                    "name": "experiencia",
-                    "href": "experience_section"
-                },
-                {
                     "name": "skillset",
                     "href": "skillset_section"
+                },
+                {
+                    "name": "experiencia",
+                    "href": "experience_section"
                 }
             ],
             "locale": [
@@ -73,19 +73,300 @@
             ]
         },
         "work": {
-            "title": "Trabajo",
-            "items": [
+            "title": "Trabajo Profesional",
+            "projects": [
                 {
-                    "title": "Plataforma EscuchActiva",
-                    "header": "Desarrollador front-end",
-                    "status": "Terminado",
-                    "description": "Forme parte del equipo del iTec Lab como programador front-end para el desarrollo de la plataforma EscuchActiva. Se logró el diseño del mock-up provisto de manera optima y full responsive. No tuve inconveniencias que no pudiera resolver por mis propios medios. "
+                  "id": 0,
+                  "role": "Backend Developer",
+                  "projectName": "Simple Comercio",
+                  "business": "Simple Comercio",
+                  "description": {
+                    "text": "This is the most complex and challenging project and the one where I've learned the most.\n\nI'm working as the lead back-end developer for an e-commerce platform, where my main responsibilities are designing and building a node.js micro-service architecture which provides APIs (REST and RPC) for clients to consume and integrates with several third party services.",
+                    "techTools": [
+                        "Node.js",
+                        "RabbitMQ",
+                        "Typescript",
+                        "Express",
+                        "MongoDB",
+                        "PostgreSQL",
+                        "Docker",
+                        "Docker-Compose",
+                        "DO Cloud Services",
+                        "Firebase Auth",
+                        "Grafana Loki",
+                        "Cloud Messaging",
+                        "Jest/Supertest",
+                        "Swagger",
+                        "Gitlab CI/CD",
+                        "Nginx",
+                        "Linux",
+                        "Bash Scripting"
+                    ]
+                  },
+                  "achievements": [
+                    "Designed, built and maintained back-end micro-service architecture",
+                    "Designed and implemented databases for each micro-service (MongoDB and PostgreSQL)",
+                    "Designed and implemented multiple REST and RPC APIs ",
+                    "Integrated with many different third party services",
+                    "Dockerized backend infrastructure with Docker-Compose and automated deploy with Bash scripts",
+                    "Built custom npm module for a company requirements",
+                    "Implemented RPC direct-reply pattern to communicate microservices between each other",
+                    "Implemented notifications service (push, email, sms, whatsapp, discord)",
+                    "Implemented monitoring service (Grafana Loki)",
+                    "Backend infrastructure deployment in cloud platforms such as DigitalOcean",
+                    "Set up web server and reverse proxy with Nginx",
+                    "Wrote integrations tests"
+                  ],
+                  "date": "December 2021 - Present"
+                },
+                {
+                    "id": 1,
+                    "role": "Full Stack Developer",
+                    "projectName": "Sindicarne",
+                    "business": "iTec Labs",
+                    "description": {
+                        "text": "I was responsible of designing, developing and deploying two frontend apps and a backend API for a client.\n\nThe first app is a registration form for employees, and the second one is an admin panel where they could perform different operations upon the registrations.\n\nThe backend API is responsible of managing the employees data, authentication, and the business logics.\n",
+                        "techTools": [
+                            "React.js",
+                            "Node.js",
+                            "Express.js",
+                            "Fetch API",
+                            "Redux",
+                            "Tailwind CSS",
+                            "PostgreSQL",
+                            "JWT",
+                            "Linux",
+                            "Bash scripting"
+                        ]
+                    },
+                    "achievements": [
+                      "Designed and implemented front-end and back-end from scratch",
+                      "Successfully merged this project with an existing infrastructure and business logics",
+                      "Consumed and rendered data from a REST API",
+                      "Manually deployed all three applications to a server instance",
+                      "Implemented a search engine",
+                      "Implemented token based authentication and authorization",
+                      "Integrated with different third party services",
+                      "Achieved client expectations in a timely manner"
+                    ],
+                    "date": "December 2021 - Present"
+                },
+                {
+                    "id": 2,
+                    "role": "Frontend Developer",
+                    "projectName": "EscuchActiva",
+                    "business": "iTec Labs",
+                    "description": {
+                        "text": "This project was a platform was an ongoing project that offered online courses for drum players.\n\nAs my first project, my only responsibilities were completing frontend tasks that were given to me.\n\nThese included handling permissions, creating a live chat, integrating a video player, rendering pdf files, and more.\n",
+                        "techTools": [
+                            "React.js",
+                            "Context API",
+                            "LocalStorage",
+                            "Fetch API",
+                            "Tailwind CSS",
+                            "WebSocket",
+                            "React Video Player",
+                            "React PDF Viewer"
+
+                        ]
+                    },
+                    "achievements": [
+                        "Consumed and rendered data from a REST API",
+                      "Implemented a live chat",
+                      "Implemented a streaming video player",
+                      "Implemented a pdf viewer",
+                      "Implemented pdf zoom feature",
+                      "Integrated with different third party services",
+                      "Achieved client expectations in a timely manner"
+                    ],
+                    "date": "December 2021 - Present"
+                },
+                {
+                    "id": 3,
+                    "role": "Fullstack Trainee",
+                    "projectName": "iTec Labs",
+                    "business": "iTec Labs",
+                    "description": {
+                        "text": "iTec Labs is a software factory owned by the same institute where I studied. They provided the opportunity to a selected number of students to have our first job experiences.\n\n I worked in several projects that involved learning and implementing those learned skills in a dynamic and challenging environment. This is where I learned my first professional experiences, and everything that comes with it.",
+                        "techTools": [
+                            "React.js",
+                            "Node.js",
+                            "Express.js",
+                            "Context API",
+                            "LocalStorage",
+                            "Fetch API",
+                            "Tailwind CSS",
+                            "MongoDB", 
+                            "PostgreSQL",
+                            "Redux",
+                            "Linux",
+                            "JWT",
+                            "Nginx",
+                            "Bash scripting"
+
+                        ]
+                    },
+                    "achievements": [
+                      "Implemented the fundamentals of React",
+                      "Implemented the fundamentals of API REST with Express.js",
+                      "Implemented state management with Redux",
+                      "Implemented token based authentication and authorization with JWT",
+                      "Integrated with different third party services",
+                      "Worked as I learned in a fast paced environment",
+                      "Deployed frontend and back applications",
+                      "Set up reverse proxy and web server with Nginx",
+                      "Designed and implemented relational and no relationals databases"
+                    ],
+                    "date": "December 2021 - Present"
                 }
-            ]
+              ]
         },
         "skills": {
             "title": "Skills",
-            "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos."
+            "description": "Estas son algunas de las tecnologías/frameworks que manejo. Los porcentajes no son del todo representativos.",
+            "front": [
+                {
+                  "name": "HTML",
+                  "icon": "html-1.svg"
+                },
+                {
+                  "name": "CSS",
+                  "icon": "css-3.svg"
+                },
+                {
+                  "name": "JavaScript",
+                  "icon": "logo-javascript.svg"
+                },
+                {
+                  "name": "TypeScript",
+                  "icon": "typescript.svg"
+                },
+                {
+                  "name": "TailwindCSS",
+                  "icon": "tailwindcss.svg"
+                },
+                {
+                  "name": "Next.js",
+                  "icon": "next-js.svg"
+                },
+            
+                {
+                  "name": "React",
+                  "icon": "react-2.svg"
+                },
+                {
+                  "name": "Redux",
+                  "icon": "redux.svg"
+                },
+                {
+                  "name": "Svelte",
+                  "icon": "svelte-1.svg"
+                },
+                {
+                  "name": "i18next",
+                  "icon": "i18next-icon.svg"
+                }
+            ],
+            "back": [
+                {
+                    "name": "Node.js",
+                    "icon": "nodejs-icon.svg"
+                },
+                {
+                    "name": "Express.js",
+                    "icon": "express-109.svg"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "mongodb-icon-1.svg"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "icon": "postgresql.svg"
+                },
+                {
+                    "name": "AWS SQS",
+                    "icon": "aws-sqs.svg"
+                },
+                {
+                    "name": "AWS S3",
+                    "icon": "amazon-s3.svg"
+                },
+                {
+                    "name": "RabbitMQ",
+                    "icon": "rabbitmq.svg"
+                },
+                {
+                    "name": "Firebase",
+                    "icon": "firebase-1.svg"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "logo-javascript.svg"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "typescript.svg"
+                },
+                {
+                    "name": "Twilio",
+                    "icon": "twilio.svg"
+                },
+                {
+                    "name": "Sendgrid",
+                    "icon": "sendgrid-1.svg"
+                }
+            ],
+            "infra":[
+                {
+                    "name": "DevOps",
+                    "icon": "devops-2.svg"
+                },
+                {
+                    "name": "DigitalOcean",
+                    "icon": "digitalocean-icon-1.svg"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "docker.svg"
+                },
+                {
+                    "name": "AWS EC2",
+                    "icon": "aws-ec2.svg"
+                },
+                {
+                    "name": "RabbitMQ",
+                    "icon": "rabbitmq.svg"
+                },
+                {
+                    "name": "Git",
+                    "icon": "git-icon.svg"
+                },
+                {
+                    "name": "GitLab",
+                    "icon": "gitlab.svg"
+                },
+                {
+                    "name": "Bash",
+                    "icon": "bash-1.svg"
+                },
+                {
+                    "name": "Linux",
+                    "icon": "linux-tux.svg"
+                },
+                {
+                    "name": "Grafana",
+                    "icon": "grafana-icon.svg"
+                },
+                {
+                    "name": "Nginx",
+                    "icon": "nginx-1.svg"
+                },
+                {
+                    "name": "Vercel",
+                    "icon": "vercel.svg"
+                }
+            ]
         }
     },
     "portfolio": {

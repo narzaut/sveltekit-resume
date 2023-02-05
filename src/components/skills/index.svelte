@@ -1,154 +1,84 @@
 <script lang="ts">
-  import TechBar from './tech.bar.svelte';
   import Button from '../shared/button.svelte';
-
-  export let data: Array<any> = [
-    {
-      name: 'Node.js & Express.js',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Next.js',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Typescript',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Docker',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Git',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'MongoDB & Mongoose',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'MySQL & PostgreSQL & Sequelize',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'RabbitMQ',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Firebase Admin',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Firebase Cloud Messaging',
-      percentage: 65,
-      icon: 'Icon'
-    },
-
-    {
-      name: 'SvelteKit',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Tailwind CSS',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Digital Ocean Droplets',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Digital Ocean Managed Databases System',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Twilio Notifications',
-      percentage: 65,
-      icon: 'Icon'
-    },
-    {
-      name: 'Jest & Supertest',
-      percentage: 20,
-      icon: 'Icon'
-    },
-    {
-      name: 'tRPC',
-      percentage: 15,
-      icon: 'Icon'
-    },
-    {
-      name: 'Redis',
-      percentage: 15,
-      icon: 'Icon'
-    }
-  ];
+  import { MonitorIcon, SettingsIcon, DatabaseIcon, ArchiveIcon } from 'svelte-feather-icons';
   import { fly } from 'svelte/transition';
   import viewport from '../../utils/useViewportAction';
+  import { json } from '../../lib/i18n';
+  let skills: Skills = $json('resume.skills') as Skills;
   let animate: boolean = false;
   let visibility: string = 'invisible';
-  $: currentItems = 4;
+  type SelectOptions = 'front' | 'back' | 'infra';
+  let selected: SelectOptions = 'back';
+  let current = skills[selected];
+
+  type inputE = {
+    target: {
+      innerText: string;
+    };
+  };
+
+  const handleClick = (e: inputE) => {
+    selected = e.target.innerText.toLowerCase() as SelectOptions;
+    switch (selected) {
+      case 'front':
+        current = skills.front;
+        break;
+      case 'back':
+        current = skills.back;
+        break;
+      case 'infra':
+        current = skills.infra;
+        break;
+    }
+  };
 </script>
 
 {#key animate}
-  <div
-    id="skillset_section"
-    class={`${visibility} flex w-full  flex-col items-center justify-center gap-8`}
-  >
+  <div id="skillset_section" class={`flex w-full  flex-col items-center justify-center gap-8`}>
     <div
       in:fly={{ y: 400, duration: 800, delay: 500 }}
       use:viewport
       on:enterViewport={() => {
-        animate = true;
         visibility = 'visible';
+        animate = true;
       }}
-      class="glass z-20 flex w-full flex-col items-center justify-center lg:w-1/2"
+      class="glass z-20 flex w-full flex-col items-center justify-center gap-10 lg:w-1/2"
     >
       <div
-        class="text-gray-light flex w-full items-end gap-2   rounded px-6 text-center text-xl md:text-left lg:gap-4 lg:px-12 lg:text-left lg:text-3xl  "
+        class="flex w-full items-end gap-2 rounded   px-6 text-center text-xl text-gray-light md:text-left lg:gap-4 lg:px-12 lg:text-left lg:text-3xl  "
       >
-        <span class="font-mono  text-base text-green-400 lg:text-xl"> 03.</span>
+        <span class="font-mono  text-base text-green-400 lg:text-xl"> 02.</span>
         <span class="text-left font-bold">Skills</span>
         <div class="bg-secondary mb-3.5 h-0.5 w-full " />
       </div>
-      <div>
-        <p class="text-gray px-6 font-mono text-xs italic lg:whitespace-nowrap  lg:text-sm">
-          <span class="text-green-400">*</span> Percentages aren't fully representatives
-        </p>
-      </div>
-      <div class="flex w-full flex-col gap-6 px-8 lg:w-1/2 lg:px-0 lg:pt-8">
-        {#each data.slice(0, currentItems) as item, index}
-          <TechBar
-            id={`${index}`}
-            index={index - currentItems + 4}
-            name={item.name}
-            percentage={item.percentage}
-            icon={item.icon}
+      <div class="flex w-full   ">
+        {#each ['Front', 'Back', 'Infra'] as item, index}
+          <Button
+            onClick={(e) => handleClick(e)}
+            buttonText={item}
+            icon={index == 0 ? MonitorIcon : index == 1 ? DatabaseIcon : SettingsIcon}
+            className={`${
+              selected == item.toLowerCase() ? 'transition bg-green-pressed' : ''
+            } w-1/3 text-sm lg:text-lg rounded-none`}
           />
         {/each}
-        {#if currentItems < data.length}
-          <Button
-            className="mt-6"
-            id="loadmore"
-            onClick={() => {
-              currentItems = currentItems + 4;
-            }}
-            href={`#techbar/${currentItems - 7}`}
-            buttonText="Show more"
-          />
-        {/if}
+      </div>
+      <div class="flex w-full flex-wrap items-center justify-center px-2 lg:px-0">
+        {#key current}
+          {#each current as item, index}
+            <div
+              in:fly={{ x: -600, duration: 800, delay: 75 * index }}
+              class="hover-text-green-400 hover-press-animation flex w-1/3 cursor-pointer items-center justify-center font-mono  font-bold text-gray-light transition lg:w-1/4 "
+            >
+              <div class="flex h-40 flex-col  items-center justify-start lg:m-2 ">
+                <div class=" items-start justify-start text-center">
+                  <p class="text-base lg:text-xl ">{item.name}</p>
+                </div>
+                <img class="flex w-20 scale-65 pt-4" src={`/images/logos/${item.icon}`} alt="" />
+              </div>
+            </div>
+          {/each}
+        {/key}
       </div>
     </div>
   </div>
