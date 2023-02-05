@@ -6,7 +6,7 @@
 
 <div
   in:fly={{ y: 800, duration: 1200, delay: 2600 }}
-  class="absolute right-0 left-0 bottom-0 z-20 "
+  class="absolute right-0 left-0 bottom-0 z-40 "
 >
   <a href={`#${href}`} aria-label={`${href}`}>
     <ArrowDownCircleIcon

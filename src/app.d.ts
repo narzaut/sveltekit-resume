@@ -77,9 +77,9 @@ type PortfolioType = {
 
 type FooterType = {
     credits: {
-        madeBy: string,
-        inspiredBy: string
-    }
+        text: string,
+        by: string
+    }[]
 
 }
 

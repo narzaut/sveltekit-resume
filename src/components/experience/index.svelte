@@ -4,16 +4,14 @@
   import ExperienceOption from './experience.option.svelte';
   import viewport from '../../utils/useViewportAction';
 
+  export let data: WorkType;
   let visibility = 'invisible';
   let animate: boolean = false;
-  export let data: WorkType;
-  const experiences = data.projects;
-  let currentExperience: ExperienceItem = experiences[0];
-  let selected: number = currentExperience.id;
+  $: experiences = data.projects as ExperienceItem[];
+  $: selected = experiences[0].id;
 
   const handleClick = (value: ExperienceItem) => {
-    if (currentExperience !== value) currentExperience = value;
-    selected = currentExperience.id;
+    if (selected !== value.id) selected = value.id;
   };
 </script>
 
@@ -29,7 +27,7 @@
         visibility = 'visible';
         animate = true;
       }}
-      class={`glass  text-gray z-30 flex w-full flex-col gap-8   lg:w-1/2 lg:px-0 `}
+      class={`glass  text-gray z-30 flex w-full flex-col gap-8   lg:w-3/5 lg:px-0 `}
     >
       <div
         class="flex items-end  gap-2   rounded px-2 text-center text-xl text-gray-light md:text-left lg:gap-4 lg:text-left lg:text-3xl  "
@@ -44,9 +42,9 @@
             <ExperienceOption {selected} {handleClick} {experience} />
           {/each}
         </div>
-        {#key currentExperience}
+        {#key experiences[selected]}
           <div in:fade class="h-120 w-full  pt-4 lg:pt-0 ">
-            <Content experience={currentExperience} />
+            <Content experience={experiences[selected]} />
           </div>
         {/key}
       </div>

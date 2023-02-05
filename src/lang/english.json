@@ -104,7 +104,7 @@
                             "Firebase Auth",
                             "Grafana Loki",
                             "Cloud Messaging",
-                            "Jest/Supertest",
+                            "Jest",
                             "Swagger",
                             "Gitlab CI/CD",
                             "Nginx",
@@ -158,7 +158,7 @@
                           "Integrated with different third party services",
                           "Achieved client expectations in a timely manner"
                         ],
-                        "date": "December 2021 - Present"
+                        "date": "June 2021 - October 2021"
                     },
                     {
                         "id": 2,
@@ -180,7 +180,7 @@
                             ]
                         },
                         "achievements": [
-                            "Consumed and rendered data from a REST API",
+                          "Consumed and rendered data from a REST API",
                           "Implemented a live chat",
                           "Implemented a streaming video player",
                           "Implemented a pdf viewer",
@@ -188,7 +188,7 @@
                           "Integrated with different third party services",
                           "Achieved client expectations in a timely manner"
                         ],
-                        "date": "December 2021 - Present"
+                        "date": "March 2021 - May 2021"
                     },
                     {
                         "id": 3,
@@ -218,15 +218,15 @@
                         "achievements": [
                           "Implemented the fundamentals of React",
                           "Implemented the fundamentals of API REST with Express.js",
+                          "Designed and implemented relational and no relationals databases",
                           "Implemented state management with Redux",
                           "Implemented token based authentication and authorization with JWT",
                           "Integrated with different third party services",
                           "Worked as I learned in a fast paced environment",
                           "Deployed frontend and back applications",
-                          "Set up reverse proxy and web server with Nginx",
-                          "Designed and implemented relational and no relationals databases"
+                          "Set up reverse proxy and web server with Nginx"
                         ],
-                        "date": "December 2021 - Present"
+                        "date": "February 2021 - December 2021"
                     }
                   ]
             },
@@ -439,10 +439,16 @@
             ]
         },
         "footer": {
-            "credits": {
-                "madeBy": "Ignacio Arzaut",
-                "inspiredBy": "Brittany Chiang"
-            }
+            "credits": [
+                {
+                    "text": "Developed by",
+                    "by": "Ignacio Arzaut"
+                },
+                {
+                    "text": "Inspired by",
+                    "by": "Brittany Chiang"
+                }
+            ]
         }
     }
 }

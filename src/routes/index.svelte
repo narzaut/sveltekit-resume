@@ -13,6 +13,7 @@
   $: header = data.header as HeaderType;
   $: about = data.about as AboutType;
   $: resume = data.resume as ResumeType;
+  $: work = data.resume.work as WorkType;
   $: portfolio = data.portfolio as PortfolioType;
   $: footer = data.footer as FooterType;
   onMount(async () => {
@@ -23,12 +24,12 @@
 </script>
 
 {#if $isLocaleLoaded}
-  <div class=" flex flex-col gap-12 lg:gap-24">
+  <div class=" flex flex-col gap-12 lg:ml-32 lg:gap-24">
     <ShootingStars />
     <Header data={header} />
     <About data={about} />
     <Skillset data={resume.skills} />
-    <Experience data={resume.work} />
+    <Experience data={work} />
     <Portfolio data={portfolio} />
     <Footer data={footer} aboutData={about} />
   </div>

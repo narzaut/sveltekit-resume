@@ -24,7 +24,7 @@
       <div class="font-semibold text-gray-light lg:text-xl">
         {experience.role} <span> <span class="text-green-400">@ {experience.business}</span></span>
       </div>
-      <div class="font-mono text-base">July - December 2021</div>
+      <div class="font-mono text-base">{experience.date}</div>
     </div>
 
     <div class="flex w-full">
@@ -47,9 +47,6 @@
         >
           {experience.description.text}
           <div class="flex flex-col items-center justify-center pt-4">
-            <p class="border-green mb-2 max-w-fit rounded-md border-b-2 font-medium italic">
-              Tools I've used
-            </p>
             <div class="flex w-full justify-around ">
               <div class="flex w-full flex-wrap ">
                 {#each experience.description.techTools as item, index}

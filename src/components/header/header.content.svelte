@@ -8,7 +8,7 @@
 </script>
 
 <svelte:window bind:innerWidth />
-<div class=" flex h-full w-full flex-col items-center ">
+<div class=" z-50 flex h-full w-full flex-col items-center ">
   <div
     class=" fadeIn z-30 flex  h-full w-full flex-grow items-center justify-center px-6 text-left md:w-2/3   lg:w-3/4 "
   >
@@ -51,7 +51,7 @@
       </div>
       <div
         in:fly={{ x: 600, duration: 1500, delay: 1700 }}
-        class="levitate mt-40 hidden h-full w-1/3  lg:mt-12 lg:flex lg:pl-20"
+        class="levitate mt-40 hidden h-full w-1/3 select-none  lg:mt-12 lg:flex lg:pl-20"
       >
         <img class="scale-120 lg:scale-200" height="448" src="/images/hero1.png" alt="" />
       </div>

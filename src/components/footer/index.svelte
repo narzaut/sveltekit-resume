@@ -26,13 +26,10 @@
       <Item Icon={GithubIcon} value={aboutData.contactDescription.github} />
     </div>
   </div>
-
-  <div>
-    Developed by
-    <span class="font-mono italic text-green-400"> {data.credits.madeBy} </span>
-  </div>
-  <div>
-    Inspiration by
-    <span class="font-mono italic text-green-400"> {data.credits.inspiredBy} </span>
-  </div>
+  {#each data.credits as credit}
+    <div>
+      {credit.text}
+      <span class="font-mono italic text-green-400"> {credit.by} </span>
+    </div>
+  {/each}
 </footer>

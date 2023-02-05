@@ -90,7 +90,7 @@
                       "projectName": "Simple Comercio",
                       "business": "Simple Comercio",
                       "description": {
-                        "text": "This is the most complex and challenging project and the one where I've learned the most.\n\nI'm working as the lead back-end developer for an e-commerce platform, where my main responsibilities are designing and building a node.js micro-service architecture which provides APIs (REST and RPC) for clients to consume and integrates with several third party services.",
+                        "text": "Este es el proyecto más complejo y desafiante y el en el que he aprendido más.\nEstoy trabajando como desarrollador encargado de back-end para una plataforma de eComerce, donde mis responsabilidades principales son diseñar, construir y mantener una arquitectura de microservicios en Node.js que se integran con varios servicios de terceros y proporcionan APIs (REST y RPC)  para que los clientes consuman.",
                         "techTools": [
                             "Node.js",
                             "RabbitMQ",
@@ -104,7 +104,7 @@
                             "Firebase Auth",
                             "Grafana Loki",
                             "Cloud Messaging",
-                            "Jest/Supertest",
+                            "Jest",
                             "Swagger",
                             "Gitlab CI/CD",
                             "Nginx",
@@ -113,20 +113,20 @@
                         ]
                       },
                       "achievements": [
-                        "Designed, built and maintained back-end micro-service architecture",
-                        "Designed and implemented databases for each micro-service (MongoDB and PostgreSQL)",
-                        "Designed and implemented multiple REST and RPC APIs ",
-                        "Integrated with many different third party services",
-                        "Dockerized backend infrastructure with Docker-Compose and automated deploy with Bash scripts",
-                        "Built custom npm module for a company requirements",
-                        "Implemented RPC direct-reply pattern to communicate microservices between each other",
-                        "Implemented notifications service (push, email, sms, whatsapp, discord)",
-                        "Implemented monitoring service (Grafana Loki)",
-                        "Backend infrastructure deployment in cloud platforms such as DigitalOcean",
-                        "Set up web server and reverse proxy with Nginx",
-                        "Wrote integrations tests"
-                      ],
-                      "date": "December 2021 - Present"
+                        "Diseñar, construir y mantener la arquitectura de microservicios de back-end",
+                        "Diseñar e implementar bases de datos para cada microservicio (MongoDB y PostgreSQL)",
+                        "Diseñar e implementar múltiples API REST y RPC",
+                        "Integrar con muchos servicios de terceros diferentes",
+                        "Dockerizar la infraestructura de back-end con Docker-Compose y automatizar el despliegue con scripts de Bash",
+                        "Construir un módulo npm personalizado para los requisitos de la empresa",
+                        "Implementar el patrón de respuesta directa RPC para comunicar los microservicios entre sí",
+                        "Implementar el servicio de notificaciones (push, correo electrónico, sms, whatsapp, discord)",
+                        "Implementar el servicio de monitoreo (Grafana Loki)",
+                        "Desplegar la infraestructura de back-end en plataformas en la nube como DigitalOcean",
+                        "Configurar el web server y el reverse proxy con Nginx",
+                        "Escribir tests de integración"
+                        ],
+                      "date": "Diciembre 2021 - Presente"
                     },
                     {
                         "id": 1,
@@ -134,7 +134,7 @@
                         "projectName": "Sindicarne",
                         "business": "iTec Labs",
                         "description": {
-                            "text": "I was responsible of designing, developing and deploying two frontend apps and a backend API for a client.\n\nThe first app is a registration form for employees, and the second one is an admin panel where they could perform different operations upon the registrations.\n\nThe backend API is responsible of managing the employees data, authentication, and the business logics.\n",
+                            "text": "Fui responsable de diseñar, desarrollar y desplegar dos aplicaciones frontend y una API de back-end para un cliente.\n\nLa primera aplicación es un formulario de registro para empleados, y la segunda es un panel de administrador donde pueden realizar diferentes operaciones sobre los registros.\n\nLa API de back-end es responsable de gestionar los datos de los empleados, la autenticación y las lógicas de negocio.",
                             "techTools": [
                                 "React.js",
                                 "Node.js",
@@ -149,16 +149,16 @@
                             ]
                         },
                         "achievements": [
-                          "Designed and implemented front-end and back-end from scratch",
-                          "Successfully merged this project with an existing infrastructure and business logics",
-                          "Consumed and rendered data from a REST API",
-                          "Manually deployed all three applications to a server instance",
-                          "Implemented a search engine",
-                          "Implemented token based authentication and authorization",
-                          "Integrated with different third party services",
-                          "Achieved client expectations in a timely manner"
-                        ],
-                        "date": "December 2021 - Present"
+                            "Diseñar e implementar desde cero el front-end y el back-end",
+                            "Fusionar con éxito este proyecto con una infraestructura y lógicas comerciales existentes",
+                            "Consumir y visualizar datos de una API REST",
+                            "Desplegar manualmente las tres aplicaciones en una instancia de servidor",
+                            "Implementar un motor de búsqueda",
+                            "Implementar autenticación y autorización basadas en token",
+                            "Integrar con diferentes servicios de terceros",
+                            "Lograr las expectativas del cliente en tiempo y forma"
+                            ],
+                        "date": "Junio 2021 - Octubre 2021"
                     },
                     {
                         "id": 2,
@@ -166,7 +166,7 @@
                         "projectName": "EscuchActiva",
                         "business": "iTec Labs",
                         "description": {
-                            "text": "This project was a platform was an ongoing project that offered online courses for drum players.\n\nAs my first project, my only responsibilities were completing frontend tasks that were given to me.\n\nThese included handling permissions, creating a live chat, integrating a video player, rendering pdf files, and more.\n",
+                            "text": "Este proyecto en curso era una plataforma que ofrecía webinar para bateristas.\n\nComo era mi primer proyecto, mis únicas responsabilidades eran completar tareas frontend que se me asignaban.\n\nEstas incluían el manejo de permisos, la creación de un chat en vivo, la integración de un reproductor de video, la representación de archivos pdf y más.",
                             "techTools": [
                                 "React.js",
                                 "Context API",
@@ -180,15 +180,15 @@
                             ]
                         },
                         "achievements": [
-                            "Consumed and rendered data from a REST API",
-                          "Implemented a live chat",
-                          "Implemented a streaming video player",
-                          "Implemented a pdf viewer",
-                          "Implemented pdf zoom feature",
-                          "Integrated with different third party services",
-                          "Achieved client expectations in a timely manner"
-                        ],
-                        "date": "December 2021 - Present"
+                            "Consumir y representar datos de una API REST",
+                            "Implementar un chat en vivo",
+                            "Implementar un reproductor de video en streaming",
+                            "Implementar un visor de PDF",
+                            "Implementar la función de zoom de PDF",
+                            "Integrar con diferentes servicios de terceros",
+                            "Lograr las expectativas del cliente en tiempo y forma"
+                            ],
+                        "date": "Marzo 2021 - Mayo 2021"
                     },
                     {
                         "id": 3,
@@ -196,7 +196,7 @@
                         "projectName": "iTec Labs",
                         "business": "iTec Labs",
                         "description": {
-                            "text": "iTec Labs is a software factory owned by the same institute where I studied. They provided the opportunity to a selected number of students to have our first job experiences.\n\n I worked in several projects that involved learning and implementing those learned skills in a dynamic and challenging environment. This is where I learned my first professional experiences, and everything that comes with it.",
+                            "text": "iTec Labs es una software factory que pertenece al mismo instituto donde estudié. Ofrecieron la oportunidad a un número seleccionado de estudiantes a tener nuestras primeras experiencias laborales.\n\n Trabajé en varios proyectos que implicaron aprender y aplicar esas habilidades aprendidas en tiempo real en un ambiente dinámico y desafiante. Aquí es donde aprendí mis primeras experiencias profesionales y todo lo que conlleva.",
                             "techTools": [
                                 "React.js",
                                 "Node.js",
@@ -216,17 +216,18 @@
                             ]
                         },
                         "achievements": [
-                          "Implemented the fundamentals of React",
-                          "Implemented the fundamentals of API REST with Express.js",
-                          "Implemented state management with Redux",
-                          "Implemented token based authentication and authorization with JWT",
-                          "Integrated with different third party services",
-                          "Worked as I learned in a fast paced environment",
-                          "Deployed frontend and back applications",
-                          "Set up reverse proxy and web server with Nginx",
-                          "Designed and implemented relational and no relationals databases"
-                        ],
-                        "date": "December 2021 - Present"
+                            "Aplicar fundamentos de React",
+                            "Aplicar fundamentos de API REST con Express.js",
+                            "Aplicar gestión de estado con Redux",
+                            "Diseñar e implementar bases de datos relacionales y no relacionales",
+                            "Aplicar autenticación y autorización basada en token con JWT",
+                            "Integrar con diferentes servicios de terceros",
+                            "Trabajar mientras se aprende en tiempo real en un ambiente dinámico",
+                            "Desplegar aplicaciones frontend y back a un servidor",
+                            "Configurar reverse proxy y web server con Nginx"
+                            
+                            ],
+                        "date": "Febrero 2021 - Deciembre 2021"
                     }
                   ]
             },
@@ -439,11 +440,16 @@
             ]
         },
         "footer": {
-            "credits": {
-                "made": "Desarrollado por",
-                "by": "Ignacio Arzaut"
-            },
-            "copyright": "© 2021"
+            "credits": [
+                {
+                    "text": "Desarrollado por",
+                    "by": "Ignacio Arzaut"
+                },
+                {
+                    "text": "Inspirado por",
+                    "by": "Brittany Chiang"
+                }
+            ]
         }
     }
 }

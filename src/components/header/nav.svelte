@@ -9,6 +9,7 @@
   import { setupI18n, locale } from '../../lib/i18n';
 
   export let data: NavBarType;
+  $: items = data.items;
   let activeSectionValue: string;
   let currentScroll = 0;
   let scrollDirection: 'up' | 'down' = 'down';
@@ -28,7 +29,7 @@
       currentScroll = window.scrollY + 5;
     }
     // navbar active section
-    for (const item of data.items) {
+    for (const item of items) {
       const element = document.querySelector(`#${item.href}`) as Element;
       const rect = element.getBoundingClientRect();
       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
@@ -59,12 +60,12 @@
 
 <nav
   in:fly={{ x: -200, duration: 700, delay: 0 }}
-  class=" glass fixed left-0 z-30 hidden h-screen w-28 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
+  class=" glass fixed left-0 z-30 hidden h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
 >
   <div class="flex h-full max-h-min w-full flex-col items-center justify-between  ">
     <div class="h-1/2 w-full">
       <div class=" h-full w-full flex-col items-center justify-end  md:flex" id="nav_section">
-        {#each data.items as item, index}
+        {#each items as item, index}
           <a
             class:bg-green-pressed={activeSectionValue === item.href}
             class:transition={activeSectionValue === item.href}
@@ -74,9 +75,9 @@
           >
             {#if activeSectionValue === item.href}
               <div
-                in:receive={{ key: data.items[index] }}
+                in:receive={{ key: items[index] }}
                 out:send={{
-                  key: scrollDirection == 'up' ? data.items[index + 1] : data.items[index - 1]
+                  key: scrollDirection == 'up' ? items[index + 1] : items[index - 1]
                 }}
                 class="bg-green absolute right-0 z-20 h-full w-2"
               />

@@ -20,13 +20,13 @@
 </script>
 
 <div class="locale-selector select-none border-none">
-  <div class="relative text-gray-200">
+  <div class="relative text-gray-light">
     <div
       class="flex cursor-pointer items-center justify-center "
       on:click={toggleOptions}
       on:keydown={toggleOptions}
     >
-      <img class="h-4 w-6" alt="language flag" src={selectedOption.flag} />
+      <img class="h-6 w-6 rounded-full" alt="language flag" src={selectedOption.flag} />
       <span class="ml-2 mt-0.5 font-medium">{selectedOption.name}</span>
     </div>
     {#if showOptions}
@@ -42,7 +42,7 @@
             on:keydown={() => selectOption(option)}
             on:click={() => selectOption(option)}
           >
-            <img class="h-4 w-6 " alt="language flag" src={option.flag} />
+            <img class="h-6 w-6 rounded-full" alt="language flag" src={option.flag} />
             <span class="ml-2 font-medium">{option.name}</span>
           </div>
         {/each}
