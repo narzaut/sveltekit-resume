@@ -15,11 +15,11 @@
     {href}
     aria-label={`${href}`}
     {id}
-    class="z-10 flex h-full w-full items-center justify-center p-4"
+    class="flex h-full w-full items-center justify-center p-4"
   >
     {#if icon}
-      <div class="flex h-full w-12 items-center justify-center">
-        <svelte:component this={icon} class="z-0" />
+      <div class="mx-4 flex h-full items-center justify-center">
+        <svelte:component this={icon} />
       </div>
     {/if}
     {buttonText}
