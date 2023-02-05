@@ -17,9 +17,9 @@
   $: portfolio = data.portfolio as PortfolioType;
   $: footer = data.footer as FooterType;
   onMount(async () => {
-    fetch('https://getdata.vercel.app/api/send-log', {
-      mode: 'no-cors'
-    });
+    //fetch('https://getdata.vercel.app/api/send-log', {
+    //  mode: 'no-cors'
+    //});
   });
 </script>
 

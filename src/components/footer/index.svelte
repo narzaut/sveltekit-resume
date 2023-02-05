@@ -19,14 +19,16 @@
   <footer
     id="footer_section"
     aria-label="Footer Section"
-    class="glass z-20 mt-20 flex w-1/2 flex-col items-center  self-center py-4 text-sm text-gray-300"
+    class="glass z-20 mt-20 flex w-full flex-col items-center  self-center py-4 text-sm text-gray-300"
     use:viewport
     on:enterViewport={() => {
       animate = true;
       visibility = 'visible';
     }}
   >
-    <div class=" relative mb-32 flex h-96 flex-col justify-end">
+    <div
+      class="relative mb-32 flex h-120 w-full flex-col justify-end px-8 lg:h-96 lg:w-1/2 lg:px-0"
+    >
       <div class="flex flex-col items-center justify-end pb-4  text-center">
         <div class="flex w-full flex-col items-center justify-center gap-6 font-mono lg:w-2/3 ">
           <p
@@ -43,7 +45,7 @@
           </h1>
           <h2
             in:fly={{ y: 600, duration: 900, delay: innerWidth > 600 ? 1800 : 1100 }}
-            class="text-gray text-xl font-bold  leading-loose"
+            class="text-gray text-lg font-bold leading-loose  lg:text-xl"
           >
             {data.contact.text}
           </h2>
@@ -75,9 +77,9 @@
       </div>
     </div>
 
-    <div in:fly={{ y: 600, duration: 700, delay: 2100 }}>
+    <div class="w-full " in:fly={{ y: 600, duration: 700, delay: 2100 }}>
       {#each data.credits as credit}
-        <div>
+        <div class="w-full text-center">
           {credit.text}
           <span class="font-mono italic text-green-400"> {credit.by} </span>
         </div>
