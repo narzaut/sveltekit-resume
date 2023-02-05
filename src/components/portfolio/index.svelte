@@ -27,8 +27,8 @@
       <div
         class="  w-92  flex items-end  gap-2 rounded text-center text-xl text-gray-light md:text-left lg:gap-4 lg:text-left lg:text-3xl  "
       >
-        <span class="font-mono  text-base text-green-400 lg:text-xl"> 04.</span>
-        <span class="whitespace-nowrap text-left font-bold">Portafolio</span>
+        <span class="font-mono  text-base text-green-400 lg:text-2xl"> 04.</span>
+        <span class="whitespace-nowrap text-left text-3xl">Portafolio</span>
         <div class="bg-secondary mb-3.5 h-0.5 w-full " />
       </div>
       <div class="  text-gray flex w-full  flex-wrap  items-center justify-center gap-4">

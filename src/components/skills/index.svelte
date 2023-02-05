@@ -46,8 +46,8 @@
       <div
         class="flex w-full items-end gap-2 rounded   px-6 text-center text-xl text-gray-light md:text-left lg:gap-4 lg:px-12 lg:text-left lg:text-3xl  "
       >
-        <span class="font-mono  text-base text-green-400 lg:text-xl"> 02.</span>
-        <span class="text-left font-bold">Skills</span>
+        <span class="font-mono  text-base text-green-400 lg:text-2xl"> 02.</span>
+        <span class="text-left text-3xl">Skills</span>
         <div class="bg-secondary mb-3.5 h-0.5 w-full " />
       </div>
       <div class="flex w-full   ">

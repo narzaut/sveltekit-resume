@@ -22,6 +22,10 @@
                     {
                         "name": "portfolio",
                         "href": "portfolio_section"
+                    },
+                    {
+                        "name": "contact",
+                        "href": "footer_section"
                     }
                 ],
                 "locale": [
@@ -439,6 +443,15 @@
             ]
         },
         "footer": {
+            "contact": {
+                "introduction": "What’s Next?",
+                "title": "Get In Touch",
+                "text": "If you like what you see, you want to work with me, or just want to say hi, feel free to write me. My inbox is always open for new opportunities.",
+                "button": {
+                    "text": "Say Hi",
+                    "link": "mailto:i.arzaut@itecriocuarto.org.ar"
+                }
+            },
             "credits": [
                 {
                     "text": "Developed by",

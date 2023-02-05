@@ -31,8 +31,8 @@
           <div
             class=" flex w-full  items-end gap-2 rounded text-center text-xl md:text-left lg:gap-4 lg:text-left lg:text-3xl  "
           >
-            <span class="font-mono  text-base text-green-400 lg:text-xl"> 01.</span>
-            <span class="whitespace-nowrap text-left font-bold">{data.title}</span>
+            <span class="font-mono  text-base text-green-400 lg:text-2xl"> 01.</span>
+            <span class="whitespace-nowrap text-left text-3xl">{data.title}</span>
             <div class="bg-secondary mb-3.5 h-0.5 w-full " />
           </div>
           <div class="flex flex-col items-center justify-center gap-6 font-medium lg:items-start">

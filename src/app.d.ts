@@ -76,6 +76,15 @@ type PortfolioType = {
 }
 
 type FooterType = {
+    contact: {
+        introduction:string,
+        title: string
+        text: string,
+        button: {
+            text: string,
+            link: string
+        }
+    }
     credits: {
         text: string,
         by: string

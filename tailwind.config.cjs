@@ -17,8 +17,11 @@ module.exports = {
                 wiggle: 'wiggle 2s ease-in-out infinite',
             },
             height: {
-                '120': '30rem',
                 '18': '4.5rem',
+                '120': '30rem',
+                '150': '37.5rem',
+                '175': '43.75rem',
+                '200': '50rem'
             },
             scale: {
                 '200': '2',

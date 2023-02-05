@@ -3,13 +3,22 @@
   import { writable } from 'svelte/store';
   import { quintOut } from 'svelte/easing';
   import { crossfade } from 'svelte/transition';
-  import { FilmIcon, UserIcon, ToolIcon, BriefcaseIcon, CodepenIcon } from 'svelte-feather-icons';
+  import {
+    FilmIcon,
+    UserIcon,
+    ToolIcon,
+    BriefcaseIcon,
+    CodepenIcon,
+    DownloadIcon,
+    PenToolIcon
+  } from 'svelte-feather-icons';
   import Button from '../shared/button.svelte';
   import LocaleSwitcher from './locale.switcher.svelte';
   import { setupI18n, locale } from '../../lib/i18n';
 
   export let data: NavBarType;
   $: items = data.items;
+  console.log('🚀 ~ file: nav.svelte:21 ~ items', items);
   let activeSectionValue: string;
   let currentScroll = 0;
   let scrollDirection: 'up' | 'down' = 'down';
@@ -22,20 +31,24 @@
   $: handleScroll = () => {
     // set scroll direction
     if (window.scrollY + 1 > currentScroll) {
-      scrollDirection = 'up';
       currentScroll = window.scrollY - 5;
     } else {
-      scrollDirection = 'down';
       currentScroll = window.scrollY + 5;
     }
     // navbar active section
-    for (const item of items) {
-      const element = document.querySelector(`#${item.href}`) as Element;
-      const rect = element.getBoundingClientRect();
-      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-        activeSection.set(item.href);
-        break;
+    try {
+      for (let i = 0; i <= items.length; i++) {
+        if (items[i].href.includes('http')) break;
+        const element = document.querySelector(`#${items[i].href}`) as Element;
+        const rect = element.getBoundingClientRect();
+
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight + 150) {
+          activeSection.set(items[i].href);
+          break;
+        }
       }
+    } catch (err) {
+      throw new Error(err);
     }
   };
 
@@ -60,7 +73,7 @@
 
 <nav
   in:fly={{ x: -200, duration: 700, delay: 0 }}
-  class=" glass fixed left-0 z-30 hidden h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
+  class=" glass visible fixed left-0 z-30 h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
 >
   <div class="flex h-full max-h-min w-full flex-col items-center justify-between  ">
     <div class="h-1/2 w-full">
@@ -69,7 +82,7 @@
           <a
             class:bg-green-pressed={activeSectionValue === item.href}
             class:transition={activeSectionValue === item.href}
-            href={`#${item.href}`}
+            href={item.href.includes('https') ? item.href : `#${item.href}`}
             in:fly={{ x: -200, duration: 700, delay: 200 * index }}
             class="relative z-40 h-full w-full"
           >
@@ -91,6 +104,10 @@
                 ? BriefcaseIcon
                 : item.href === 'portfolio_section'
                 ? CodepenIcon
+                : item.href === 'footer_section'
+                ? PenToolIcon
+                : item.href.includes('https')
+                ? DownloadIcon
                 : FilmIcon}
               buttonText={item.name}
               className="border-0 w-full flex flex-col  text-base rounded-none"

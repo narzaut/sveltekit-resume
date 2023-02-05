@@ -23,6 +23,11 @@
                         "name": "portafolio",
                         "href": "portfolio_section"
                     }
+                    ,
+                    {
+                        "name": "contacto",
+                        "href": "footer_section"
+                    }
                 ],
                 "locale": [
                     {
@@ -440,6 +445,15 @@
             ]
         },
         "footer": {
+            "contact": {
+                "introduction": "Y ahora?",
+                "title": "Comunicate conmigo",
+                "text": "Si te gusta lo que ves, te interesa trabajar conmigo, o simplemente quieres saludar, no dudes en escribirme. Mi inbox siempre esta abierto para nuevas oportunidades.",
+                "button": {
+                    "text": "Escribime",
+                    "link": "mailto:i.arzaut@itecriocuarto.org.ar"
+                }
+            },
             "credits": [
                 {
                     "text": "Desarrollado por",

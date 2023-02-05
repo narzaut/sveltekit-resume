@@ -33,7 +33,7 @@
         class="flex items-end  gap-2   rounded px-2 text-center text-xl text-gray-light md:text-left lg:gap-4 lg:text-left lg:text-3xl  "
       >
         <span class="font-mono  text-base text-green-400 lg:text-2xl"> 03.</span>
-        <span class="whitespace-nowrap text-left font-bold">{data.title}</span>
+        <span class="whitespace-nowrap text-left text-3xl">{data.title}</span>
         <div class="bg-secondary mb-3.5 h-0.5 w-full " />
       </div>
       <div class="  flex flex-col lg:flex-row">
