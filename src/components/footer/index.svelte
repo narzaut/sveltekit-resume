@@ -11,7 +11,7 @@
   <footer
     id="footer_section"
     aria-label="Footer Section"
-    class="glass z-20 mt-20 flex w-full flex-col items-center  self-center py-4 text-sm text-gray-300"
+    class=" z-20 mt-20 flex w-full flex-col items-center  self-center py-4 text-sm text-gray-300"
     use:viewport
     on:enterViewport={() => {
       animate = true;
@@ -22,7 +22,9 @@
       class="relative mb-32 flex h-120 w-full flex-col justify-end px-8 lg:h-96 lg:w-1/2 lg:px-0"
     >
       <div class="flex flex-col items-center justify-end pb-4  text-center">
-        <div class="flex w-full flex-col items-center justify-center gap-6 font-mono lg:w-2/3 ">
+        <div
+          class="glass flex w-full flex-col items-center justify-center gap-6 font-mono lg:w-2/3 "
+        >
           <p
             in:fly={{ y: 600, duration: 900, delay: innerWidth > 600 ? 1300 : 600 }}
             class="pl-1 font-mono text-base text-green-400 lg:text-base"
