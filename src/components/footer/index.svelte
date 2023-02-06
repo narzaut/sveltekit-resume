@@ -1,18 +1,10 @@
 <script lang="ts">
   import { fly } from 'svelte/transition';
-  import {
-    ArrowUpCircleIcon,
-    LinkedinIcon,
-    MailIcon,
-    MessageSquareIcon,
-    SendIcon
-  } from 'svelte-feather-icons';
-  import Button from '../shared/button.svelte';
+  import { LinkedinIcon, MailIcon, SendIcon } from 'svelte-feather-icons';
   export let data: FooterType;
   export let aboutData: AboutType;
   import viewport from '../../utils/useViewportAction';
   let animate: boolean = false;
-  let visibility: string = 'invisible';
 </script>
 
 {#key animate}
