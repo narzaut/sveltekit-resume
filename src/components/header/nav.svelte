@@ -76,7 +76,7 @@
   class=" glass fixed left-0 z-30 hidden h-screen w-32 select-none flex-col items-center  font-mono shadow-2xl  lg:flex "
 >
   <div class="flex h-full max-h-min w-full flex-col items-center justify-between  ">
-    <div class="h-1/2 w-full">
+    <div class="h-2/3 w-full">
       <div class=" h-full w-full flex-col items-center justify-end  md:flex" id="nav_section">
         {#each items as item, index}
           <a
